@@ -1,0 +1,9 @@
+// no git bash. Para usar o env no windows
+npm config set script-shell "C:\Program Files\git\bin\bash.exe" 
+
+// rodar o projeto
+npm run dev
+
+-----------------------------PM2-----------------------------------
+// instalar o pm2
+npm install pm2 -g
