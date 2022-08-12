@@ -5,6 +5,7 @@ import fs from 'fs';
 import morgan from 'morgan';
 import path from 'path';
 import 'dotenv/config';
+import populator from './populator';
 
 require('./models/index')   
 
@@ -27,6 +28,8 @@ app.use(cors(corsOptions))
 app.use(morgan('combined', { stream: accessLogStream }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+
+populator.getPokemons();
 
 routes(app);
 app.use((req, res) => {

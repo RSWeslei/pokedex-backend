@@ -1,16 +1,16 @@
 CREATE TABLE abilities (
     id serial primary key,
-    name varchar(100) NOT NULL
+    name varchar(100) NOT NULL unique
 );
 
 CREATE TABLE forms (
     id serial primary key,
-    name varchar(100) NOT NULL
+    name varchar(100) NOT NULL unique
 );
 
 CREATE TABLE types (
     id serial primary key,
-    name varchar(100) NOT NULL
+    name varchar(100) NOT NULL unique
 );
 
 CREATE TABLE status (
