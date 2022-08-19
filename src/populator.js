@@ -116,7 +116,7 @@ const getPokemons = async () => {
         let pokemonAbilitiesJson = []
         abilities.map(ability => {
             ability.map(id => {
-                pokemonAbilitiesJson.push({id_pokemon: abilities.indexOf(ability) + 1, id_ability: id})
+                pokemonAbilitiesJson.push({idPokemon: abilities.indexOf(ability) + 1, idAbility: id})
             }).join(',')
         }).join(',')
         fs.writeFileSync('./src/json/pokemon_abilities.json', JSON.stringify(pokemonAbilitiesJson)) 
@@ -134,7 +134,7 @@ const getPokemons = async () => {
         let pokemonTypesJson = []
         types.map(type => {
             type.map(id => {
-                pokemonTypesJson.push({id_pokemon: types.indexOf(type) + 1, id_type: id})
+                pokemonTypesJson.push({idPokemon: types.indexOf(type) + 1, idType: id})
             }).join(',')
         }).join(',')
         fs.writeFileSync('./src/json/pokemon_types.json', JSON.stringify(pokemonTypesJson))
@@ -228,34 +228,46 @@ const getImages = async (response) => {
 
 async function main() {
     // get json file abilities ./json/abilities.json
-    let abilities = JSON.parse(fs.readFileSync('./src/json/abilities.json'))
-    for (let i = 0; i < abilities.length; i++) {
-        let response = await Ability.create(abilities[i])
-    }
-    // get json file types ./json/types.json
-    let types = JSON.parse(fs.readFileSync('./src/json/types.json'))
-    for (let i = 0; i < types.length; i++) {
-        let response = await Type.create(types[i])
-    }
-    // get json file stats ./json/stats.json
-    let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))
-    for (let i = 0; i < stats.length; i++) {
-        let response = await Stat.create(stats[i])
-    }
-    // get json file pokemon_types ./json/pokemon_types.json
-    let pokemonTypes = JSON.parse(fs.readFileSync('./src/json/pokemon_types.json'))
-    for (let i = 0; i < pokemonTypes.length; i++) {
-        let response = await PokemonType.create(pokemonTypes[i])
-    }
-    // get json file pokemon_abilities ./json/pokemon_abilities.json
-    let pokemonAbilities = JSON.parse(fs.readFileSync('./src/json/pokemon_abilities.json'))
-    for (let i = 0; i < pokemonAbilities.length; i++) {
-        let response = await PokemonAbility.create(pokemonAbilities[i])
-    }
-    // get json file pokemons ./json/pokemons.json
-    let pokemons = JSON.parse(fs.readFileSync('./src/json/pokemons.json'))
-    for (let i = 0; i < pokemons.length; i++) {
-        let response = await Pokemon.create(pokemons[i])
+    // let abilities = JSON.parse(fs.readFileSync('./src/json/abilities.json'))
+    // for (let i = 0; i < abilities.length; i++) {
+    //     let response = await Ability.create(abilities[i])
+    // }
+    // // get json file types ./json/types.json
+    // let types = JSON.parse(fs.readFileSync('./src/json/types.json'))
+    // for (let i = 0; i < types.length; i++) {
+    //     let response = await Type.create(types[i])
+    // }
+    // // get json file stats ./json/stats.json
+    // let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))
+    // for (let i = 0; i < stats.length; i++) {
+    //     let response = await Stat.create(stats[i])
+    // }
+    // // get json file pokemon_types ./json/pokemon_types.json
+    // let pokemonTypes = JSON.parse(fs.readFileSync('./src/json/pokemon_types.json'))
+    // for (let i = 0; i < pokemonTypes.length; i++) {
+    //     let response = await PokemonType.create(pokemonTypes[i])
+    // }
+    // // get json file pokemon_abilities ./json/pokemon_abilities.json
+    // let pokemonAbilities = JSON.parse(fs.readFileSync('./src/json/pokemon_abilities.json'))
+    // for (let i = 0; i < pokemonAbilities.length; i++) {
+    //     let response = await PokemonAbility.create(pokemonAbilities[i])
+    // }
+    // // get json file pokemons ./json/pokemons.json
+    // let pokemons = JSON.parse(fs.readFileSync('./src/json/pokemons.json'))
+    // for (let i = 0; i < pokemons.length; i++) {
+    //     let response = await Pokemon.create(pokemons[i])
+    // }
+    // update evolutions
+    let evolutions = JSON.parse(fs.readFileSync('./src/json/evolutions.json'))
+    for (let i = 0; i < evolutions.length; i++) {
+        let response = await Pokemon.update({
+            evolutionTo: evolutions[i].idEvolution
+        },
+        {
+            where: {
+                id: evolutions[i].idPokemon
+            }
+        })
     }
     
 }

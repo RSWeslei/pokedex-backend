@@ -35,7 +35,7 @@ const Pokemon = sequelize.define(
     },
 );
 
-Pokemon.hasOne(Stat, {
+Pokemon.belongsTo(Stat, {
     as: 'stat',
     onDelete: 'NO ACTION',
     onUpdate: 'NO ACTION',
