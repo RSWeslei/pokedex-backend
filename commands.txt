@@ -1,3 +1,10 @@
+// instalar pacotes com dev
+npm install --save-dev <pacote>
+
+// criar estrutura de diretorios
+npx sequelize-cli init
+https://miro.medium.com/max/1400/1*FIC2CKPY1bBLPNP361C07Q.png
+
 // no git bash. Para usar o env no windows
 npm config set script-shell "C:\Program Files\git\bin\bash.exe" 
 
@@ -7,3 +14,6 @@ npm run dev
 -----------------------------PM2-----------------------------------
 // instalar o pm2
 npm install pm2 -g
+
+// para usar o migration do sequelize
+npx sequelize migration:generate --name Pokemons
