@@ -3,17 +3,12 @@ CREATE TABLE abilities (
     name varchar(100) NOT NULL unique
 );
 
-CREATE TABLE forms (
-    id serial primary key,
-    name varchar(100) NOT NULL unique
-);
-
 CREATE TABLE types (
     id serial primary key,
     name varchar(100) NOT NULL unique
 );
 
-CREATE TABLE status (
+CREATE TABLE stats (
     id serial primary key,
     hp numeric(10, 4) NOT NULL,
     attack numeric(10, 4) NOT NULL,
@@ -28,19 +23,11 @@ CREATE TABLE pokemons (
     name varchar(100) NOT NULL,
     height numeric(10, 4) NOT NULL,
     weight numeric(10, 4) NOT NULL,
-    images varchar [] NOT NULL,
-    id_status integer NOT NULL,
+    images JSON NOT NULL,
+    id_stat integer NOT NULL,
     evolution_to integer,
     CONSTRAINT fk_pokemons_pokemon FOREIGN KEY (evolution_to) REFERENCES pokemons(id),
-    CONSTRAINT fk_pokemons_status FOREIGN KEY (id_status) REFERENCES status(id)
-);
-
-CREATE TABLE pokemon_forms (
-    id serial primary key,
-    id_pokemon integer NOT NULL,
-    id_form integer NOT NULL,
-    CONSTRAINT fk_pokemon_forms_pokemon FOREIGN KEY (id_pokemon) REFERENCES pokemons(id),
-    CONSTRAINT fk_pokemon_forms_form FOREIGN KEY (id_form) REFERENCES forms(id)
+    CONSTRAINT fk_pokemons_stat FOREIGN KEY (id_stat) REFERENCES stats(id)
 );
 
 CREATE TABLE pokemon_abilities (

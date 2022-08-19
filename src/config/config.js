@@ -1,8 +1,6 @@
 import { Sequelize } from "sequelize";
 import 'dotenv/config'
 
-console.log('entrou no config');
-
 export const sequelize = new Sequelize(
     process.env.POSTGRES_DB,
     process.env.POSTGRES_USERNAME,

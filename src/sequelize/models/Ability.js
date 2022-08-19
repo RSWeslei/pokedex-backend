@@ -1,13 +1,17 @@
-import { DataTypes } from "sequelize";
-import { sequelize } from "./../../config/config";
+import DataTypes from "sequelize";
+import { sequelize } from "../../config/config";
 
-const BaseModel = sequelize.define(
-    'nome',
+const Ability = sequelize.define(
+    'abilities',
     {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     },
     {
@@ -18,4 +22,4 @@ const BaseModel = sequelize.define(
     }
 );
 
-export default BaseModel
+export default Ability

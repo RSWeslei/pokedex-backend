@@ -1,0 +1,834 @@
+[
+    {
+        "idPokemon": "1",
+        "idEvolution": "2"
+    },
+    {
+        "idPokemon": "4",
+        "idEvolution": "5"
+    },
+    {
+        "idPokemon": "7",
+        "idEvolution": "8"
+    },
+    {
+        "idPokemon": "10",
+        "idEvolution": "11"
+    },
+    {
+        "idPokemon": "13",
+        "idEvolution": "14"
+    },
+    {
+        "idPokemon": "16",
+        "idEvolution": "17"
+    },
+    {
+        "idPokemon": "19",
+        "idEvolution": "20"
+    },
+    {
+        "idPokemon": "21",
+        "idEvolution": "22"
+    },
+    {
+        "idPokemon": "23",
+        "idEvolution": "24"
+    },
+    {
+        "idPokemon": "172",
+        "idEvolution": "25"
+    },
+    {
+        "idPokemon": "27",
+        "idEvolution": "28"
+    },
+    {
+        "idPokemon": "29",
+        "idEvolution": "30"
+    },
+    {
+        "idPokemon": "32",
+        "idEvolution": "33"
+    },
+    {
+        "idPokemon": "173",
+        "idEvolution": "35"
+    },
+    {
+        "idPokemon": "37",
+        "idEvolution": "38"
+    },
+    {
+        "idPokemon": "174",
+        "idEvolution": "39"
+    },
+    {
+        "idPokemon": "41",
+        "idEvolution": "42"
+    },
+    {
+        "idPokemon": "43",
+        "idEvolution": "44"
+    },
+    {
+        "idPokemon": "46",
+        "idEvolution": "47"
+    },
+    {
+        "idPokemon": "48",
+        "idEvolution": "49"
+    },
+    {
+        "idPokemon": "50",
+        "idEvolution": "51"
+    },
+    {
+        "idPokemon": "52",
+        "idEvolution": "53"
+    },
+    {
+        "idPokemon": "54",
+        "idEvolution": "55"
+    },
+    {
+        "idPokemon": "56",
+        "idEvolution": "57"
+    },
+    {
+        "idPokemon": "58",
+        "idEvolution": "59"
+    },
+    {
+        "idPokemon": "60",
+        "idEvolution": "61"
+    },
+    {
+        "idPokemon": "63",
+        "idEvolution": "64"
+    },
+    {
+        "idPokemon": "66",
+        "idEvolution": "67"
+    },
+    {
+        "idPokemon": "69",
+        "idEvolution": "70"
+    },
+    {
+        "idPokemon": "72",
+        "idEvolution": "73"
+    },
+    {
+        "idPokemon": "74",
+        "idEvolution": "75"
+    },
+    {
+        "idPokemon": "77",
+        "idEvolution": "78"
+    },
+    {
+        "idPokemon": "79",
+        "idEvolution": "80"
+    },
+    {
+        "idPokemon": "81",
+        "idEvolution": "82"
+    },
+    {
+        "idPokemon": "83",
+        "idEvolution": "865"
+    },
+    {
+        "idPokemon": "84",
+        "idEvolution": "85"
+    },
+    {
+        "idPokemon": "86",
+        "idEvolution": "87"
+    },
+    {
+        "idPokemon": "88",
+        "idEvolution": "89"
+    },
+    {
+        "idPokemon": "90",
+        "idEvolution": "91"
+    },
+    {
+        "idPokemon": "92",
+        "idEvolution": "93"
+    },
+    {
+        "idPokemon": "95",
+        "idEvolution": "208"
+    },
+    {
+        "idPokemon": "96",
+        "idEvolution": "97"
+    },
+    {
+        "idPokemon": "98",
+        "idEvolution": "99"
+    },
+    {
+        "idPokemon": "100",
+        "idEvolution": "101"
+    },
+    {
+        "idPokemon": "102",
+        "idEvolution": "103"
+    },
+    {
+        "idPokemon": "104",
+        "idEvolution": "105"
+    },
+    {
+        "idPokemon": "236",
+        "idEvolution": "106"
+    },
+    {
+        "idPokemon": "108",
+        "idEvolution": "463"
+    },
+    {
+        "idPokemon": "109",
+        "idEvolution": "110"
+    },
+    {
+        "idPokemon": "111",
+        "idEvolution": "112"
+    },
+    {
+        "idPokemon": "440",
+        "idEvolution": "113"
+    },
+    {
+        "idPokemon": "114",
+        "idEvolution": "465"
+    },
+    {
+        "idPokemon": "115",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "116",
+        "idEvolution": "117"
+    },
+    {
+        "idPokemon": "118",
+        "idEvolution": "119"
+    },
+    {
+        "idPokemon": "120",
+        "idEvolution": "121"
+    },
+    {
+        "idPokemon": "439",
+        "idEvolution": "122"
+    },
+    {
+        "idPokemon": "123",
+        "idEvolution": "212"
+    },
+    {
+        "idPokemon": "238",
+        "idEvolution": "124"
+    },
+    {
+        "idPokemon": "239",
+        "idEvolution": "125"
+    },
+    {
+        "idPokemon": "240",
+        "idEvolution": "126"
+    },
+    {
+        "idPokemon": "127",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "128",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "129",
+        "idEvolution": "130"
+    },
+    {
+        "idPokemon": "131",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "132",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "133",
+        "idEvolution": "134"
+    },
+    {
+        "idPokemon": "137",
+        "idEvolution": "233"
+    },
+    {
+        "idPokemon": "138",
+        "idEvolution": "139"
+    },
+    {
+        "idPokemon": "140",
+        "idEvolution": "141"
+    },
+    {
+        "idPokemon": "142",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "446",
+        "idEvolution": "143"
+    },
+    {
+        "idPokemon": "144",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "145",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "146",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "147",
+        "idEvolution": "148"
+    },
+    {
+        "idPokemon": "150",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "151",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "152",
+        "idEvolution": "153"
+    },
+    {
+        "idPokemon": "155",
+        "idEvolution": "156"
+    },
+    {
+        "idPokemon": "158",
+        "idEvolution": "159"
+    },
+    {
+        "idPokemon": "161",
+        "idEvolution": "162"
+    },
+    {
+        "idPokemon": "163",
+        "idEvolution": "164"
+    },
+    {
+        "idPokemon": "165",
+        "idEvolution": "166"
+    },
+    {
+        "idPokemon": "167",
+        "idEvolution": "168"
+    },
+    {
+        "idPokemon": "170",
+        "idEvolution": "171"
+    },
+    {
+        "idPokemon": "175",
+        "idEvolution": "176"
+    },
+    {
+        "idPokemon": "177",
+        "idEvolution": "178"
+    },
+    {
+        "idPokemon": "179",
+        "idEvolution": "180"
+    },
+    {
+        "idPokemon": "298",
+        "idEvolution": "183"
+    },
+    {
+        "idPokemon": "438",
+        "idEvolution": "185"
+    },
+    {
+        "idPokemon": "187",
+        "idEvolution": "188"
+    },
+    {
+        "idPokemon": "190",
+        "idEvolution": "424"
+    },
+    {
+        "idPokemon": "191",
+        "idEvolution": "192"
+    },
+    {
+        "idPokemon": "193",
+        "idEvolution": "469"
+    },
+    {
+        "idPokemon": "194",
+        "idEvolution": "195"
+    },
+    {
+        "idPokemon": "198",
+        "idEvolution": "430"
+    },
+    {
+        "idPokemon": "200",
+        "idEvolution": "429"
+    },
+    {
+        "idPokemon": "201",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "360",
+        "idEvolution": "202"
+    },
+    {
+        "idPokemon": "203",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "204",
+        "idEvolution": "205"
+    },
+    {
+        "idPokemon": "206",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "207",
+        "idEvolution": "472"
+    },
+    {
+        "idPokemon": "209",
+        "idEvolution": "210"
+    },
+    {
+        "idPokemon": "211",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "213",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "214",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "215",
+        "idEvolution": "461"
+    },
+    {
+        "idPokemon": "216",
+        "idEvolution": "217"
+    },
+    {
+        "idPokemon": "218",
+        "idEvolution": "219"
+    },
+    {
+        "idPokemon": "220",
+        "idEvolution": "221"
+    },
+    {
+        "idPokemon": "222",
+        "idEvolution": "864"
+    },
+    {
+        "idPokemon": "223",
+        "idEvolution": "224"
+    },
+    {
+        "idPokemon": "225",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "458",
+        "idEvolution": "226"
+    },
+    {
+        "idPokemon": "227",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "228",
+        "idEvolution": "229"
+    },
+    {
+        "idPokemon": "231",
+        "idEvolution": "232"
+    },
+    {
+        "idPokemon": "234",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "235",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "241",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "243",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "244",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "245",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "246",
+        "idEvolution": "247"
+    },
+    {
+        "idPokemon": "249",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "250",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "251",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "252",
+        "idEvolution": "253"
+    },
+    {
+        "idPokemon": "255",
+        "idEvolution": "256"
+    },
+    {
+        "idPokemon": "258",
+        "idEvolution": "259"
+    },
+    {
+        "idPokemon": "261",
+        "idEvolution": "262"
+    },
+    {
+        "idPokemon": "263",
+        "idEvolution": "264"
+    },
+    {
+        "idPokemon": "265",
+        "idEvolution": "266"
+    },
+    {
+        "idPokemon": "270",
+        "idEvolution": "271"
+    },
+    {
+        "idPokemon": "273",
+        "idEvolution": "274"
+    },
+    {
+        "idPokemon": "276",
+        "idEvolution": "277"
+    },
+    {
+        "idPokemon": "278",
+        "idEvolution": "279"
+    },
+    {
+        "idPokemon": "280",
+        "idEvolution": "281"
+    },
+    {
+        "idPokemon": "283",
+        "idEvolution": "284"
+    },
+    {
+        "idPokemon": "285",
+        "idEvolution": "286"
+    },
+    {
+        "idPokemon": "287",
+        "idEvolution": "288"
+    },
+    {
+        "idPokemon": "290",
+        "idEvolution": "291"
+    },
+    {
+        "idPokemon": "293",
+        "idEvolution": "294"
+    },
+    {
+        "idPokemon": "296",
+        "idEvolution": "297"
+    },
+    {
+        "idPokemon": "299",
+        "idEvolution": "476"
+    },
+    {
+        "idPokemon": "300",
+        "idEvolution": "301"
+    },
+    {
+        "idPokemon": "302",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "303",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "304",
+        "idEvolution": "305"
+    },
+    {
+        "idPokemon": "307",
+        "idEvolution": "308"
+    },
+    {
+        "idPokemon": "309",
+        "idEvolution": "310"
+    },
+    {
+        "idPokemon": "311",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "312",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "313",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "314",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "406",
+        "idEvolution": "315"
+    },
+    {
+        "idPokemon": "316",
+        "idEvolution": "317"
+    },
+    {
+        "idPokemon": "318",
+        "idEvolution": "319"
+    },
+    {
+        "idPokemon": "320",
+        "idEvolution": "321"
+    },
+    {
+        "idPokemon": "322",
+        "idEvolution": "323"
+    },
+    {
+        "idPokemon": "324",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "325",
+        "idEvolution": "326"
+    },
+    {
+        "idPokemon": "327",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "328",
+        "idEvolution": "329"
+    },
+    {
+        "idPokemon": "331",
+        "idEvolution": "332"
+    },
+    {
+        "idPokemon": "333",
+        "idEvolution": "334"
+    },
+    {
+        "idPokemon": "335",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "336",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "337",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "338",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "339",
+        "idEvolution": "340"
+    },
+    {
+        "idPokemon": "341",
+        "idEvolution": "342"
+    },
+    {
+        "idPokemon": "343",
+        "idEvolution": "344"
+    },
+    {
+        "idPokemon": "345",
+        "idEvolution": "346"
+    },
+    {
+        "idPokemon": "347",
+        "idEvolution": "348"
+    },
+    {
+        "idPokemon": "349",
+        "idEvolution": "350"
+    },
+    {
+        "idPokemon": "351",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "352",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "353",
+        "idEvolution": "354"
+    },
+    {
+        "idPokemon": "355",
+        "idEvolution": "356"
+    },
+    {
+        "idPokemon": "357",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "433",
+        "idEvolution": "358"
+    },
+    {
+        "idPokemon": "359",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "361",
+        "idEvolution": "362"
+    },
+    {
+        "idPokemon": "363",
+        "idEvolution": "364"
+    },
+    {
+        "idPokemon": "366",
+        "idEvolution": "367"
+    },
+    {
+        "idPokemon": "369",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "370",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "371",
+        "idEvolution": "372"
+    },
+    {
+        "idPokemon": "374",
+        "idEvolution": "375"
+    },
+    {
+        "idPokemon": "377",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "378",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "379",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "380",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "381",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "382",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "383",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "384",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "385",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "386",
+        "idEvolution": null
+    },
+    {
+        "idPokemon": "387",
+        "idEvolution": "388"
+    },
+    {
+        "idPokemon": "390",
+        "idEvolution": "391"
+    },
+    {
+        "idPokemon": "393",
+        "idEvolution": "394"
+    },
+    {
+        "idPokemon": "396",
+        "idEvolution": "397"
+    },
+    {
+        "idPokemon": "399",
+        "idEvolution": "400"
+    },
+    {
+        "idPokemon": "401",
+        "idEvolution": "402"
+    }
+]

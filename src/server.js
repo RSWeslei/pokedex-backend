@@ -7,7 +7,7 @@ import path from 'path';
 import 'dotenv/config';
 import populator from './populator';
 
-require('./sequelize/models/index2')   
+require('./sequelize/models/models')   
 
 const app = express();
 const accessLogStream = fs.createWriteStream(
@@ -29,7 +29,15 @@ app.use(morgan('combined', { stream: accessLogStream }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// populator.getPokemons();
+
+async function getApi() {
+    // await populator.getAbilities()
+    // await populator.getTypes()
+    // await populator.getPokemons()
+    // await populator.updateEvolutions()
+    await populator.main()
+}
+getApi()
 
 routes(app);
 app.use((req, res) => {
