@@ -54,9 +54,19 @@ const getTypes = async () => {
             } catch (error) {
                 continue
             }
+            let weakness = []
+            let resistance = []
+            response.data.damage_relations.double_damage_from.forEach(type => {
+                weakness.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.double_damage_to.forEach(type => {
+                resistance.push(type.url.split('/')[6])
+            })
             types.push({
                 id: response.data.id,
-                name: response.data.name
+                name: response.data.name,
+                weakness: weakness,
+                resistance: resistance
             })
             console.log(`Type ${i}/${totalTypes}`)
         }
