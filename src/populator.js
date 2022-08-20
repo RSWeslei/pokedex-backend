@@ -1,6 +1,7 @@
 import axios from "axios"
 import fs from "fs"
 import Ability from "./sequelize/models/Ability"
+import EvolutionChain from "./sequelize/models/EvolutionChain"
 import Pokemon from "./sequelize/models/Pokemon"
 import PokemonAbility from "./sequelize/models/PokemonAbility"
 import PokemonType from "./sequelize/models/PokemonType"
@@ -9,47 +10,58 @@ import Type from "./sequelize/models/Type"
 
 const getAbilities = async () => {
     let abilities = []
-    let abilitiesJson = []
-    let totalAbilities = 267 // original 267
+    let totalAbilities = 268 // original 268
     try {
         for (let i = 1; i <= totalAbilities; i++) {
-            let response = await axios.get(`https://pokeapi.co/api/v2/ability/${i}`)
-            abilities.push(response.data.name)
-            abilitiesJson.push({name: response.data.name})
+            let response = null
+            try {
+                response = await axios.get(`https://pokeapi.co/api/v2/ability/${i}`)
+            } catch (error) {
+                console.log(error.message);
+                continue
+            }
+            let effect = ''
+            if (response.data.effect_entries[0] && (response.data.effect_entries[0].language.name == 'en')) {
+                effect = response.data.effect_entries[0].effect
+            }
+            else if (response.data.effect_entries[1] && (response.data.effect_entries[1].language.name == 'en')) {
+                effect = response.data.effect_entries[1].effect
+            }
+            let ability = {
+                id: response.data.id,
+                name: response.data.name,
+                description: effect
+            }
+            abilities.push(ability)
             console.log(`Ability ${i}/${totalAbilities}`)
         }
-        let insertCommand = `INSERT INTO abilities (name) VALUES\n`
-        abilities.map(ability => {
-            insertCommand += `('${ability}'),\n`
-        }).join(',')
-        insertCommand = insertCommand.slice(0, -1)
-        fs.writeFileSync('./src/sql/abilities.sql', insertCommand)
         // save abilities in a json file
-        fs.writeFileSync('./src/json/abilities.json', JSON.stringify(abilitiesJson))
+        fs.writeFileSync('./src/json/abilities.json', JSON.stringify(abilities))
     } catch (error) {
+        console.log(error);
         return
     }
 }
 
 const getTypes = async () => {
     let types = []
-    let typesJson = []
-    let totalTypes = 18 // original 18
+    let totalTypes = 20 // original 20
     try {
         for (let i = 1; i <= totalTypes; i++) {
-            let response = await axios.get(`https://pokeapi.co/api/v2/type/${i}`)
-            types.push({name: response.data.name})
-            typesJson.push({name: response.data.name})
+            let response = null
+            try {
+                response = await axios.get(`https://pokeapi.co/api/v2/type/${i}`)
+            } catch (error) {
+                continue
+            }
+            types.push({
+                id: response.data.id,
+                name: response.data.name
+            })
             console.log(`Type ${i}/${totalTypes}`)
         }
-        let insertCommand = `INSERT INTO types (name) VALUES\n`
-        types.map(type => {
-            insertCommand += `('${type}'),\n`
-        }).join(',')    
-        insertCommand = insertCommand.slice(0, -1)
-        fs.writeFileSync('./src/sql/types.sql', insertCommand)
         // save types in a json file
-        fs.writeFileSync('./src/json/types.json', JSON.stringify(typesJson))
+        fs.writeFileSync('./src/json/types.json', JSON.stringify(types))
     } catch (error) {
         console.log(error);
         return
@@ -74,17 +86,57 @@ const getStat = async (pokemon) => {
     }
 }
 
+const getEvolutionsChain = async () => {
+    try {
+        let evolutionSize = 468 // original 468
+        let evolutions = []
+        for (let i = 1; i <= evolutionSize; i++) {
+            
+            // make the response dont break the code
+            let response = null
+            try {
+                response = await axios.get(`https://pokeapi.co/api/v2/evolution-chain/${i}`)
+            } catch (error) {
+                continue
+            }
+            let actualExist = response.data.chain.evolves_to.length > 0
+            let nextExist = actualExist ? response.data.chain.evolves_to[0].evolves_to.length > 0 : false
+            let evolutionChain = {
+                id: response.data.id,
+                previousEvolution: response.data.chain.species.url.split('/')[6],
+                actualEvolution: actualExist ? response.data.chain.evolves_to[0].species.url.split('/')[6] : null,
+                nextEvolution: nextExist ? response.data.chain.evolves_to[0].evolves_to[0].species.url.split('/')[6] : null
+            }
+            evolutions.push(evolutionChain)
+            console.log(`Evolution ${i}/${evolutionSize}`)
+        }
+        fs.writeFileSync('./src/json/evolutions_chain.json', JSON.stringify(evolutions))
+        console.log('Evoluções da árvore atualizadas com sucesso!')
+        return evolutions
+    } catch (error) {
+        console.log(error);
+        return
+    }
+}
+
 const getPokemons = async () => {
     let pokemons = []
     let abilities = []
     let types = []
-    let pokemonQtd = 905 // original 905
+    let pokemonQtd = 906 // original 906
     try {
         for (let i = 1; i <= pokemonQtd; i++) {
-            let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
+            let response = null
+            try {
+                response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
+            } catch (error) {
+                continue
+            }
+            
             let images = await getImages(response)
             await getStat(response.data.stats)
             let pokemon = {
+                id: response.data.id,
                 name: response.data.species.name,
                 height: response.data.height,
                 weight: response.data.weight,
@@ -102,15 +154,8 @@ const getPokemons = async () => {
             pokemons.push(pokemon)
             console.log(`Pokemon ${i}/${pokemonQtd}`)
         }
-
-        let insertPokemonAbility = `INSERT INTO pokemon_abilities (id_pokemon, id_ability) VALUES\n`
-        abilities.map(ability => {
-            ability.map(id => {
-                insertPokemonAbility += `(${abilities.indexOf(ability) + 1}, ${id}),\n`
-            }).join(',')
-        }).join(',')
-        insertPokemonAbility = insertPokemonAbility.slice(0, -1)
-        fs.writeFileSync('./src/sql/pokemon_abilities.sql', insertPokemonAbility)
+        
+        //#region Insert Pokemon
 
         // save pokemon_abilities in a json file
         let pokemonAbilitiesJson = []
@@ -121,15 +166,6 @@ const getPokemons = async () => {
         }).join(',')
         fs.writeFileSync('./src/json/pokemon_abilities.json', JSON.stringify(pokemonAbilitiesJson)) 
 
-        let insertPokemonType = `INSERT INTO pokemon_types (id_pokemon, id_type) VALUES\n`
-        types.map(type => {
-            type.map(id => {
-                insertPokemonType += `(${types.indexOf(type) + 1}, ${id}),\n`
-            }).join(',')
-        }).join(',')
-        insertPokemonType = insertPokemonType.slice(0, -1)
-        fs.writeFileSync('./src/sql/pokemon_types.sql', insertPokemonType)
-
         // save pokemon_types in a json file
         let pokemonTypesJson = []
         types.map(type => {
@@ -138,23 +174,9 @@ const getPokemons = async () => {
             }).join(',')
         }).join(',')
         fs.writeFileSync('./src/json/pokemon_types.json', JSON.stringify(pokemonTypesJson))
-        
-        let insertStats = `INSERT INTO stats (hp, attack, defense, speed, specialAttack, specialDefense) VALUES\n`
-        stats.map(stat => {
-            insertStats += `(${stat.hp}, ${stat.attack}, ${stat.defense}, ${stat.speed}, ${stat.specialAttack}, ${stat.specialDefense}),\n`
-        }).join(',')
-        insertStats = insertStats.slice(0, -1)
-        fs.writeFileSync('./src/sql/stats.sql', insertStats)
 
         // save stats in a json file
         fs.writeFileSync('./src/json/stats.json', JSON.stringify(stats))
-
-        let insertCommand = `INSERT INTO pokemons (name, height, weight, images, id_stat) VALUES\n`
-        pokemons.map(pokemon => {
-            insertCommand += `('${pokemon.name}', ${pokemon.height}, ${pokemon.weight}), ${JSON.stringify(pokemon.images)}, ${pokemon.idStat}\n`
-        }).join(',')
-        insertCommand = insertCommand.slice(0, -1)
-        fs.writeFileSync('./src/sql/pokemons.sql', insertCommand)
 
         // save pokemons in a json file
         fs.writeFileSync('./src/json/pokemons.json', JSON.stringify(pokemons))
@@ -164,45 +186,12 @@ const getPokemons = async () => {
         console.log('Total de abilities: ' + abilities.length)
         console.log('Total de types: ' + types.length)
         console.log('Total de stats: ' + stats.length)
+
+        //#endregion
     } catch (error) {
         console.log(error);
         return
     }
-}
-
-const updateEvolutions = async () => {
-    try {
-        let evolutionSize = 209 // original 209
-        let evolutions = []
-        for (let i = 1; i < evolutionSize; i++) {        
-            let response = await axios.get(`https://pokeapi.co/api/v2/evolution-chain/${i}`)
-            let pokemonId = response.data.chain.species.url.split('/')[6]
-            let evolutionTo = null
-            if (response.data.chain.evolves_to[0]){
-                evolutionTo = response.data.chain.evolves_to[0].species.url.split('/')[6]
-            }
-            let evolution = {
-                idPokemon: pokemonId,
-                idEvolution: evolutionTo
-            }
-            evolutions.push(evolution)
-            console.log(`Evolution ${i}/${evolutionSize}`)
-        }
-        let updateCommand = `UPDATE pokemons SET id_evolution = `
-        evolutions.map(evolution => {
-            updateCommand += `${evolution.idEvolution} WHERE id = ${evolution.idPokemon},\n`
-        }).join(',')
-        updateCommand = updateCommand.slice(0, -1)
-        fs.writeFileSync('./src/sql/update_evolutions.sql', updateCommand)
-
-        // save evolutions in a json file
-        fs.writeFileSync('./src/json/evolutions.json', JSON.stringify(evolutions))
-        console.log('Evoluções atualizadas com sucesso!')
-        console.log('Total de evoluções: ' + evolutions.length)
-    } catch (error) {
-        console.log(error);
-        return
-    }    
 }
 
 
@@ -227,54 +216,51 @@ const getImages = async (response) => {
 }
 
 async function main() {
-    // get json file abilities ./json/abilities.json
-    // let abilities = JSON.parse(fs.readFileSync('./src/json/abilities.json'))
-    // for (let i = 0; i < abilities.length; i++) {
-    //     let response = await Ability.create(abilities[i])
-    // }
-    // // get json file types ./json/types.json
-    // let types = JSON.parse(fs.readFileSync('./src/json/types.json'))
-    // for (let i = 0; i < types.length; i++) {
-    //     let response = await Type.create(types[i])
-    // }
-    // // get json file stats ./json/stats.json
-    // let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))
-    // for (let i = 0; i < stats.length; i++) {
-    //     let response = await Stat.create(stats[i])
-    // }
-    // // get json file pokemon_types ./json/pokemon_types.json
-    // let pokemonTypes = JSON.parse(fs.readFileSync('./src/json/pokemon_types.json'))
-    // for (let i = 0; i < pokemonTypes.length; i++) {
-    //     let response = await PokemonType.create(pokemonTypes[i])
-    // }
-    // // get json file pokemon_abilities ./json/pokemon_abilities.json
-    // let pokemonAbilities = JSON.parse(fs.readFileSync('./src/json/pokemon_abilities.json'))
-    // for (let i = 0; i < pokemonAbilities.length; i++) {
-    //     let response = await PokemonAbility.create(pokemonAbilities[i])
-    // }
-    // // get json file pokemons ./json/pokemons.json
-    // let pokemons = JSON.parse(fs.readFileSync('./src/json/pokemons.json'))
-    // for (let i = 0; i < pokemons.length; i++) {
-    //     let response = await Pokemon.create(pokemons[i])
-    // }
-    // update evolutions
-    let evolutions = JSON.parse(fs.readFileSync('./src/json/evolutions.json'))
-    for (let i = 0; i < evolutions.length; i++) {
-        let response = await Pokemon.update({
-            evolutionTo: evolutions[i].idEvolution
-        },
-        {
-            where: {
-                id: evolutions[i].idPokemon
-            }
-        })
+    try {
+        // get json file abilities ./json/abilities.json
+        // let abilities = JSON.parse(fs.readFileSync('./src/json/abilities.json'))
+        // for (let i = 0; i < abilities.length; i++) {
+        //     let response = await Ability.create(abilities[i])
+        // }
+        // // get json file types ./json/types.json
+        // let types = JSON.parse(fs.readFileSync('./src/json/types.json'))
+        // for (let i = 0; i < types.length; i++) {
+        //     let response = await Type.create(types[i])
+        // }
+        // // get json file stats ./json/stats.json
+        // let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))
+        // for (let i = 0; i < stats.length; i++) {
+        //     let response = await Stat.create(stats[i])
+        // }
+        // // get json file pokemon_types ./json/pokemon_types.json
+        // let pokemonTypes = JSON.parse(fs.readFileSync('./src/json/pokemon_types.json'))
+        // for (let i = 0; i < pokemonTypes.length; i++) {
+        //     let response = await PokemonType.create(pokemonTypes[i])
+        // }
+        // // get json file pokemon_abilities ./json/pokemon_abilities.json
+        // let pokemonAbilities = JSON.parse(fs.readFileSync('./src/json/pokemon_abilities.json'))
+        // for (let i = 0; i < pokemonAbilities.length; i++) {
+        //     let response = await PokemonAbility.create(pokemonAbilities[i])
+        // }
+        // // get json file pokemons ./json/pokemons.json
+        // let pokemons = JSON.parse(fs.readFileSync('./src/json/pokemons.json'))
+        // for (let i = 0; i < pokemons.length; i++) {
+        //     let response = await Pokemon.create(pokemons[i])
+        // }
+        // get json evolution_chain ./json/evolution_chain.json
+        // let evolutionChain = JSON.parse(fs.readFileSync('./src/json/evolutions_chain.json'))
+        // for (let i = 0; i < evolutionChain.length; i++) {
+        //     let response = await EvolutionChain.create(evolutionChain[i])
+        // }
+    } catch (error) {
+        console.log(error);
+        return
     }
-    
 }
 export default {
     getAbilities,
     getTypes,
     getPokemons,
-    updateEvolutions,
+    getEvolutionsChain,
     main
 }

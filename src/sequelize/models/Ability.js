@@ -12,6 +12,10 @@ const Ability = sequelize.define(
         name: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        description: {
+            type: DataTypes.STRING(2000),
+            allowNull: true
         }
     },
     {

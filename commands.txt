@@ -17,3 +17,17 @@ npm install pm2 -g
 
 // para usar o migration do sequelize
 npx sequelize migration:generate --name Pokemons
+
+/////
+select a.id as abilityId, p.id as pokemonId, p.name as pokemonName, a.name from pokemons as p
+inner join pokemon_abilities as pa on (p.id = pa.id_pokemon)
+inner join abilities as a on (a.id = pa.id_ability)
+
+////////////////
+select p.id as PokemonID, p.name as Pokemon, s.hp, s.attack, s.defense from pokemons as p
+inner join stats as s on (p.id_stat = s.id)
+
+//////
+select p.id as pkId, p.name, t.name as Pokemon from pokemons as p
+inner join pokemon_types as pt on (pt.id_pokemon = p.id)
+inner join types as t on (pt.id_type = t.id)

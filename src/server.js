@@ -32,9 +32,9 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 async function getApi() {
     // await populator.getAbilities()
+    // await populator.getEvolutionsChain()
     // await populator.getTypes()
     // await populator.getPokemons()
-    // await populator.updateEvolutions()
     await populator.main()
 }
 getApi()
