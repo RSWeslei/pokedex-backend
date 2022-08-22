@@ -35,13 +35,13 @@ async function getApi() {
     // await populator.getEvolutionsChain()
     // await populator.getTypes()
     // await populator.getPokemons()
-    await populator.main()
+    // await populator.main()
 }
 getApi()
 
 routes(app);
 app.use((req, res) => {
-    res.status(404).send('Página web não encontrada!')
+    res.status(404).send('Pagina web nao encontrada!')
 });
 
 app.listen(3000, () => {
