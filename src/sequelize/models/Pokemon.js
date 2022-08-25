@@ -45,16 +45,4 @@ Pokemon.belongsTo(Stat, {
         field: 'id_stat'
     }
 });
-
-Pokemon.hasOne(Pokemon, {
-    as: 'evolution',
-    onDelete: 'NO ACTION',
-    onUpdate: 'NO ACTION',
-    foreignKey: {
-        name: 'evolutionTo',
-        allowNull: true,
-        field: 'evolution_to'
-    }
-});
-
 export default Pokemon
