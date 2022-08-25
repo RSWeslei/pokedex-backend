@@ -26,5 +26,8 @@
   },
   "nodemonConfig": {
     "ignore": ["src/json/*.json"]
+  },
+  "engines": {
+    "node": "17.1.0"
   }
 }

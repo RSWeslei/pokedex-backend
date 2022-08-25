@@ -42,6 +42,7 @@ getApi()
 routes(app);
 app.use((req, res) => {
     res.status(404).send('Pagina web nao encontrada!')
+    
 });
 
 app.listen(3000, () => {
