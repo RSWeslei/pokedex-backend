@@ -11,6 +11,8 @@ npm config set script-shell "C:\Program Files\git\bin\bash.exe"
 // rodar o projeto
 npm run dev
 
+// sudo -u postgres psql
+
 -----------------------------PM2-----------------------------------
 // instalar o pm2
 npm install pm2 -g
