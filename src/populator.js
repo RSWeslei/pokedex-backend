@@ -145,9 +145,11 @@ const getPokemons = async () => {
             
             let images = await getImages(response)
             await getStat(response.data.stats)
+            let name = response.data.species.name
+            let nameFixed = name.charAt(0).toUpperCase() + name.slice(1)
             let pokemon = {
                 id: response.data.id,
-                name: response.data.species.name,
+                name: nameFixed,
                 height: response.data.height,
                 weight: response.data.weight,
                 images: images,
@@ -245,6 +247,10 @@ async function main() {
         // get json file pokemons ./json/pokemons.json
         let pokemons = JSON.parse(fs.readFileSync('./src/json/pokemons.json'))
         for (let i = 0; i < pokemons.length; i++) {
+            // fix name
+            let name = pokemons[i].name
+            let nameFixed = name.charAt(0).toUpperCase() + name.slice(1)
+            pokemons[i].name = nameFixed
             let response = await Pokemon.create(pokemons[i])
         }
         // get json file pokemon_abilities ./json/pokemon_abilities.json
