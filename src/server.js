@@ -5,7 +5,6 @@ import fs from 'fs';
 import morgan from 'morgan';
 import path from 'path';
 import 'dotenv/config';
-import populator from './populator';
 
 require('./sequelize/models/models')   
 
@@ -29,15 +28,6 @@ app.use(morgan('combined', { stream: accessLogStream }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-
-async function getApi() {
-    // await populator.getAbilities()
-    // await populator.getEvolutionsChain()
-    // await populator.getTypes()
-    // await populator.getPokemons()
-    // await populator.main()
-}
-getApi()
 
 routes(app);
 app.use((req, res) => {
