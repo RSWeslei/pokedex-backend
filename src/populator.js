@@ -7,6 +7,8 @@ import PokemonAbility from "./sequelize/models/PokemonAbility"
 import PokemonType from "./sequelize/models/PokemonType"
 import Stat from "./sequelize/models/Stat"
 import Type from "./sequelize/models/Type"
+import TypeResistance from "./sequelize/models/TypeResistance"
+import TypeWeakness from "./sequelize/models/TypeWeakness"
 
 const getAbilities = async () => {
     let abilities = []
@@ -46,6 +48,28 @@ const getAbilities = async () => {
 const getTypes = async () => {
     let types = []
     let totalTypes = 20 // original 20
+    let TypeWeakness = []
+    let TypeResistance = []
+    const colours = {
+        normal: '#A8A77A',
+        fire: '#EE8130',
+        water: '#6390F0',
+        electric: '#F7D02C',
+        grass: '#7AC74C',
+        ice: '#96D9D6',
+        fighting: '#C22E28',
+        poison: '#A33EA1',
+        ground: '#E2BF65',
+        flying: '#A98FF3',
+        psychic: '#F95587',
+        bug: '#A6B91A',
+        rock: '#B6A136',
+        ghost: '#735797',
+        dragon: '#6F35FC',
+        dark: '#705746',
+        steel: '#B7B7CE',
+        fairy: '#D685AD',
+    };
     try {
         for (let i = 1; i <= totalTypes; i++) {
             let response = null
@@ -54,24 +78,36 @@ const getTypes = async () => {
             } catch (error) {
                 continue
             }
-            let weakness = []
-            let resistance = []
             response.data.damage_relations.double_damage_from.forEach(type => {
-                weakness.push(type.url.split('/')[6])
+                TypeWeakness.push(
+                    {
+                        idType: response.data.id,
+                        idTypeWeakness: type.url.split('/')[6]
+                    }
+                )
             })
             response.data.damage_relations.double_damage_to.forEach(type => {
-                resistance.push(type.url.split('/')[6])
+                TypeResistance.push(
+                    {
+                        idType: response.data.id,
+                        idTypeResistance: type.url.split('/')[6]
+                    }
+                )
             })
             types.push({
                 id: response.data.id,
-                name: response.data.name,
-                weakness: weakness,
-                resistance: resistance
+                name: response.data.name.charAt(0).toUpperCase() + response.data.name.slice(1),
+                color: colours[response.data.name]
             })
             console.log(`Type ${i}/${totalTypes}`)
+
         }
         // save types in a json file
         fs.writeFileSync('./src/json/types.json', JSON.stringify(types))
+        // save type_weakness in a json file
+        fs.writeFileSync('./src/json/type_weakness.json', JSON.stringify(TypeWeakness))
+        // save type_resistance in a json file
+        fs.writeFileSync('./src/json/type_resistance.json', JSON.stringify(TypeResistance))
     } catch (error) {
         console.log(error);
         return
@@ -206,7 +242,6 @@ const getPokemons = async () => {
     }
 }
 
-
 const getImages = async (response) => {
     try {
         let images = {}
@@ -238,6 +273,16 @@ async function main() {
         let types = JSON.parse(fs.readFileSync('./src/json/types.json'))
         for (let i = 0; i < types.length; i++) {
             let response = await Type.create(types[i])
+        }
+        // get json file type_weaknesses ./json/type_weaknesses.json
+        let typeWeaknesses = JSON.parse(fs.readFileSync('./src/json/type_weakness.json'))
+        for (let i = 0; i < typeWeaknesses.length; i++) {
+            let response = await TypeWeakness.create(typeWeaknesses[i])
+        }
+        // get json file type_resistances ./json/type_resistances.json
+        let typeResistances = JSON.parse(fs.readFileSync('./src/json/type_resistance.json'))
+        for (let i = 0; i < typeResistances.length; i++) {
+            let response = await TypeResistance.create(typeResistances[i])
         }
         // get json file stats ./json/stats.json
         let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))

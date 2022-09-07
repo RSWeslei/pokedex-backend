@@ -13,21 +13,9 @@ const Type = sequelize.define(
             type: DataTypes.STRING,
             allowNull: false
         },
-        icon: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         color: {
             type: DataTypes.STRING(7),
             allowNull: false
-        },
-        weakness: {
-            type: DataTypes.ARRAY(DataTypes.INTEGER),
-            allowNull: true
-        },
-        resistance: {
-            type: DataTypes.ARRAY(DataTypes.INTEGER),
-            allowNull: true
         }
     },
     {
@@ -37,4 +25,5 @@ const Type = sequelize.define(
         updatedAt: 'updated_at'
     }
 );
-export default Type
+
+export default Type;

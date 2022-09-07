@@ -29,5 +29,12 @@
   },
   "engines": {
     "node": "17.1.0"
-  }
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs"
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
