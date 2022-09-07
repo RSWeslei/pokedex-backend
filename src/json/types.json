@@ -1,283 +1,92 @@
 [
     {
         "id": 1,
-        "name": "normal",
-        "icon": "https://ibb.co/6Zk9P1P",
-        "color": "#A8A77A",
-        "weakness": [
-            "2"
-        ],
-        "resistance": []
+        "name": "Normal",
+        "color": "#A8A77A"
     },
     {
         "id": 2,
-        "name": "fighting",
-        "icon": "https://ibb.co/FKGdL3J",
-        "color": "#C22E28",
-        "weakness": [
-            "3",
-            "14",
-            "18"
-        ],
-        "resistance": [
-            "1",
-            "6",
-            "9",
-            "15",
-            "17"
-        ]
+        "name": "Fighting",
+        "color": "#C22E28"
     },
     {
         "id": 3,
-        "name": "flying",
-        "icon": "https://ibb.co/Gcd17TC",
-        "color": "#A98FF3",
-        "weakness": [
-            "6",
-            "13",
-            "15"
-        ],
-        "resistance": [
-            "2",
-            "7",
-            "12"
-        ]
+        "name": "Flying",
+        "color": "#A98FF3"
     },
     {
         "id": 4,
-        "name": "poison",
-        "icon": "https://ibb.co/2P5Q4K7",
-        "color": "#A33EA1",
-        "weakness": [
-            "5",
-            "14"
-        ],
-        "resistance": [
-            "12",
-            "18"
-        ]
+        "name": "Poison",
+        "color": "#A33EA1"
     },
     {
         "id": 5,
-        "name": "ground",
-        "icon": "https://ibb.co/74tG5Fr",
-        "color": "#E2BF65",
-        "weakness": [
-            "11",
-            "12",
-            "15"
-        ],
-        "resistance": [
-            "4",
-            "6",
-            "9",
-            "10",
-            "13"
-        ]
+        "name": "Ground",
+        "color": "#E2BF65"
     },
     {
         "id": 6,
-        "name": "rock",
-        "icon": "https://ibb.co/C8gLTqz",
-        "color": "#B6A136",
-        "weakness": [
-            "2",
-            "5",
-            "9",
-            "11",
-            "12"
-        ],
-        "resistance": [
-            "3",
-            "7",
-            "10",
-            "15"
-        ]
+        "name": "Rock",
+        "color": "#B6A136"
     },
     {
         "id": 7,
-        "name": "bug",
-        "icon": "https://ibb.co/xz8kTBw",
-        "color": "#A6B91A",
-        "weakness": [
-            "3",
-            "6",
-            "10"
-        ],
-        "resistance": [
-            "12",
-            "14",
-            "17"
-        ]
+        "name": "Bug",
+        "color": "#A6B91A"
     },
     {
         "id": 8,
-        "name": "ghost",
-        "icon": "https://ibb.co/d0WXJT4",
-        "color": "#735797",
-        "weakness": [
-            "8",
-            "17"
-        ],
-        "resistance": [
-            "8",
-            "14"
-        ]
+        "name": "Ghost",
+        "color": "#735797"
     },
     {
         "id": 9,
-        "name": "steel",
-        "icon": "https://ibb.co/7z43H1n",
-        "color": "#B7B7CE",
-        "weakness": [
-            "2",
-            "5",
-            "10"
-        ],
-        "resistance": [
-            "6",
-            "15",
-            "18"
-        ]
+        "name": "Steel",
+        "color": "#B7B7CE"
     },
     {
         "id": 10,
-        "name": "fire",
-        "icon": "https://ibb.co/yFSp9bD",
-        "color": "#EE8130",
-        "weakness": [
-            "5",
-            "6",
-            "11"
-        ],
-        "resistance": [
-            "7",
-            "9",
-            "12",
-            "15"
-        ]
+        "name": "Fire",
+        "color": "#EE8130"
     },
     {
         "id": 11,
-        "name": "water",
-        "icon": "https://ibb.co/F4gKbGB",
-        "color": "#6390F0",
-        "weakness": [
-            "12",
-            "13"
-        ],
-        "resistance": [
-            "5",
-            "6",
-            "10"
-        ]
+        "name": "Water",
+        "color": "#6390F0"
     },
     {
         "id": 12,
-        "name": "grass",
-        "icon": "https://ibb.co/pvbJx9w",
-        "color": "#7AC74C",
-        "weakness": [
-            "3",
-            "4",
-            "7",
-            "10",
-            "15"
-        ],
-        "resistance": [
-            "5",
-            "6",
-            "11"
-        ]
+        "name": "Grass",
+        "color": "#7AC74C"
     },
     {
         "id": 13,
-        "name": "electric",
-        "icon": "https://ibb.co/jvGNwDn",
-        "color": "#F7D02C",
-        "weakness": [
-            "5"
-        ],
-        "resistance": [
-            "3",
-            "11"
-        ]
+        "name": "Electric",
+        "color": "#F7D02C"
     },
     {
         "id": 14,
-        "name": "psychic",
-        "icon": "https://ibb.co/WzjdVWG",
-        "color": "#F95587",
-        "weakness": [
-            "7",
-            "8",
-            "17"
-        ],
-        "resistance": [
-            "2",
-            "4"
-        ]
+        "name": "Psychic",
+        "color": "#F95587"
     },
     {
         "id": 15,
-        "name": "ice",
-        "icon": "https://ibb.co/w4ps6Wm",
-        "color": "#92E7F7",
-        "weakness": [
-            "2",
-            "6",
-            "9",
-            "10"
-        ],
-        "resistance": [
-            "3",
-            "5",
-            "12",
-            "16"
-        ]
+        "name": "Ice",
+        "color": "#96D9D6"
     },
     {
         "id": 16,
-        "name": "dragon",
-        "icon": "https://ibb.co/J7wtrhX",
-        "color": "#6F35FC",
-        "weakness": [
-            "15",
-            "16",
-            "18"
-        ],
-        "resistance": [
-            "16"
-        ]
+        "name": "Dragon",
+        "color": "#6F35FC"
     },
     {
         "id": 17,
-        "name": "dark",
-        "icon": "https://ibb.co/tYsg75f",
-        "color": "#705746",
-        "weakness": [
-            "2",
-            "7",
-            "18"
-        ],
-        "resistance": [
-            "8",
-            "14"
-        ]
+        "name": "Dark",
+        "color": "#705746"
     },
     {
         "id": 18,
-        "name": "fairy",
-        "icon": "https://ibb.co/YZ493B4",
-        "color": "#F4B0E6",
-        "weakness": [
-            "4",
-            "9"
-        ],
-        "resistance": [
-            "2",
-            "16",
-            "17"
-        ]
+        "name": "Fairy",
+        "color": "#D685AD"
     }
 ]
