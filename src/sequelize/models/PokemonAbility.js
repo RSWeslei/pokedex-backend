@@ -10,6 +10,11 @@ const PokemonAbility = sequelize.define(
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
+        },
+        isHidden: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+            field: 'is_hidden'
         }
     },
     {
