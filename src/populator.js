@@ -191,25 +191,32 @@ const getPokemons = async () => {
                 images: images,
                 idStat: stats.length
             }
-            let abilitiesId = response.data.abilities.map(ability => {
-                return ability.ability.url.split('/')[6]
+            let abilitiesData = response.data.abilities.map(ability => {
+                return {
+                    abilityId: ability.ability.url.split('/')[6],
+                    isHidden: ability.is_hidden
+                }
             })
             let typesId = response.data.types.map(type => {
                 return type.type.url.split('/')[6]
             })
-            abilities.push(abilitiesId)
+            abilities.push(abilitiesData)
             types.push(typesId)
             pokemons.push(pokemon)
             console.log(`Pokemon ${i}/${pokemonQtd}`)
         }
-        
+        console.log(abilities);
         //#region Insert Pokemon
 
         // save pokemon_abilities in a json file
         let pokemonAbilitiesJson = []
         abilities.map(ability => {
-            ability.map(id => {
-                pokemonAbilitiesJson.push({idPokemon: abilities.indexOf(ability) + 1, idAbility: id})
+            ability.map(abilityData => {
+                pokemonAbilitiesJson.push({
+                    idPokemon: abilities.indexOf(ability) + 1,
+                    idAbility: abilityData.abilityId,
+                    isHidden: abilityData.isHidden
+                })
             }).join(',')
         }).join(',')
         fs.writeFileSync('./src/json/pokemon_abilities.json', JSON.stringify(pokemonAbilitiesJson)) 

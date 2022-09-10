@@ -1,4 +1,5 @@
 import Pokemon from "../sequelize/models/Pokemon";
+import PokemonAbility from "../sequelize/models/PokemonAbility";
 import PokemonType from "../sequelize/models/PokemonType";
 import Stat from "../sequelize/models/Stat";
 import Type from "../sequelize/models/Type";
@@ -15,7 +16,9 @@ const get = async (req, res) => {
             let i = 0
             for (let pokemon of response) {
                 let types = await pokemon.getTypes()
+                let abilities = await pokemon.getAbilities()
                 pokemons[i].types = types
+                pokemons[i].abilities = abilities
                 i++
             }
             if (!response) {
