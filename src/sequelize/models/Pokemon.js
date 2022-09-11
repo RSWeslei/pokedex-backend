@@ -30,8 +30,8 @@ const Pokemon = sequelize.define(
     {
         freezeTableName: true,
         timestamps: true,
-        createdAt: 'created_at',
-        updatedAt: 'updated_at'
+        createdAt: false,
+        updatedAt: false,
     },
 );
 

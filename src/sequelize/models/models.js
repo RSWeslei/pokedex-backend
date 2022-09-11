@@ -27,7 +27,7 @@ async function start () {
 async function getApi() {
 	// await populator.getAbilities()
 	// await populator.getEvolutionsChain()
-	// await populator.getTypes()
+	// await populator.getTypes()0
 	// await populator.getPokemons()
 	await populator.main()
 }
