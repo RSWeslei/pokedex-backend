@@ -10,7 +10,8 @@ const get = async (req, res) => {
         if (!id) {
             // get only the first 20 pokemons
             let response = await Pokemon.findAll({
-                limit: 20
+                limit: 20,
+                include: 'stat'
             })
             let pokemons = JSON.parse(JSON.stringify(response))
             let i = 0
