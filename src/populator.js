@@ -258,7 +258,7 @@ const getImages = async (response) => {
         let animated = response.data.sprites.versions['generation-v']['black-white'].animated
         images = {
             artwork: artwork,
-            home: home,
+            // home: home,
             svgs: svgs,
             animated: animated
         }
