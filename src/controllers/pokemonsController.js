@@ -10,15 +10,32 @@ const get = async (req, res) => {
         if (!id) {
             // get only the first 20 pokemons
             let response = await Pokemon.findAll({
-                limit: 100
+                limit: 20
             })
             let pokemons = JSON.parse(JSON.stringify(response))
             let i = 0
             for (let pokemon of response) {
                 let types = await pokemon.getTypes()
+                types.forEach(type => delete type.dataValues.pokemon_types)
                 let abilities = await pokemon.getAbilities()
+                let abilitiesJson = JSON.parse(JSON.stringify(abilities))
+                for (const ability of abilitiesJson) {
+                    let isHidden =  ability.pokemon_abilities.isHidden
+                    ability.pokemon_abilities = undefined
+                    ability.isHidden = isHidden
+                }
+                abilitiesJson.sort((a, b) => {
+                    if (a.isHidden && !b.isHidden) {
+                        return 1
+                    }
+                    if (!a.isHidden && b.isHidden) {
+                        return -1
+                    }
+                    return 0
+                })
+
                 pokemons[i].types = types
-                pokemons[i].abilities = abilities
+                pokemons[i].abilities = abilitiesJson
                 i++
             }
             if (!response) {
