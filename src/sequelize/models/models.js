@@ -9,6 +9,7 @@ import EvolutionChain from "./EvolutionChain"
 import populator from '../../populator'
 import TypeWeakness from "./TypeWeakness"
 import TypeResistance from "./TypeResistance"
+import TypeDamageRelation from "./TypeDamageRelation"
 
 let sync = true
 async function start () {
@@ -21,6 +22,7 @@ async function start () {
 	await EvolutionChain.sync({force: sync})
 	await TypeWeakness.sync({force: sync})
 	await TypeResistance.sync({force: sync})
+	await TypeDamageRelation.sync({force: sync})
 
 	await getApi()
 }
@@ -29,6 +31,7 @@ async function getApi() {
 	// await populator.getEvolutionsChain()
 	// await populator.getTypes()0
 	// await populator.getPokemons()
+	// await populator.getTypeDamageRelations()
 	await populator.main()
 }
 start()

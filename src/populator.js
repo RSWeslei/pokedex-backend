@@ -9,6 +9,7 @@ import Stat from "./sequelize/models/Stat"
 import Type from "./sequelize/models/Type"
 import TypeResistance from "./sequelize/models/TypeResistance"
 import TypeWeakness from "./sequelize/models/TypeWeakness"
+import TypeDamageRelation from "./sequelize/models/TypeDamageRelation"
 
 const getAbilities = async () => {
     let abilities = []
@@ -108,6 +109,56 @@ const getTypes = async () => {
         fs.writeFileSync('./src/json/type_weakness.json', JSON.stringify(TypeWeakness))
         // save type_resistance in a json file
         fs.writeFileSync('./src/json/type_resistance.json', JSON.stringify(TypeResistance))
+    } catch (error) {
+        console.log(error);
+        return
+    }
+}
+
+const getTypeDamageRelations = async () => {
+    let damageRelation = []
+    let totalTypes = 20
+    try {
+        for (let i = 1; i <= totalTypes; i++) {
+            let response = null
+            try {
+                response = await axios.get(`https://pokeapi.co/api/v2/type/${i}`)
+            } catch (error) {
+                continue
+            }
+            damageRelation.push(
+               {
+                idType: response.data.id,
+                doubleDamageFrom: [],
+                doubleDamageTo: [],
+                halfDamageFrom: [],
+                halfDamageTo: [],
+                noDamageFrom: [],
+                noDamageTo: []
+               }
+            )
+            response.data.damage_relations.double_damage_from.forEach(type => {
+                damageRelation[i-1].doubleDamageFrom.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.double_damage_to.forEach(type => {
+                damageRelation[i-1].doubleDamageTo.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.half_damage_from.forEach(type => {
+                damageRelation[i-1].halfDamageFrom.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.half_damage_to.forEach(type => {
+                damageRelation[i-1].halfDamageTo.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.no_damage_from.forEach(type => {
+                damageRelation[i-1].noDamageFrom.push(type.url.split('/')[6])
+            })
+            response.data.damage_relations.no_damage_to.forEach(type => {
+                damageRelation[i-1].noDamageTo.push(type.url.split('/')[6])
+            })
+            console.log(`Type ${i}/${totalTypes}`)
+        }
+        // save damageRelation in a json file
+        fs.writeFileSync('./src/json/damage_relation.json', JSON.stringify(damageRelation))
     } catch (error) {
         console.log(error);
         return
@@ -281,6 +332,11 @@ async function main() {
         for (let i = 0; i < types.length; i++) {
             let response = await Type.create(types[i])
         }
+        // get json file damage_relation ./json/damage_relation.json
+        let damageRelation = JSON.parse(fs.readFileSync('./src/json/damage_relation.json'))
+        for (let i = 0; i < damageRelation.length; i++) {
+            let response = await TypeDamageRelation.create(damageRelation[i])
+        }
         // get json file type_weaknesses ./json/type_weaknesses.json
         let typeWeaknesses = JSON.parse(fs.readFileSync('./src/json/type_weakness.json'))
         for (let i = 0; i < typeWeaknesses.length; i++) {
@@ -330,5 +386,6 @@ export default {
     getTypes,
     getPokemons,
     getEvolutionsChain,
+    getTypeDamageRelations,
     main
 }
