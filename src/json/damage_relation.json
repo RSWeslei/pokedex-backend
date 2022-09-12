@@ -1,0 +1,489 @@
+[
+    {
+        "idType": 1,
+        "doubleDamageFrom": [
+            "2"
+        ],
+        "doubleDamageTo": [],
+        "halfDamageFrom": [],
+        "halfDamageTo": [
+            "6",
+            "9"
+        ],
+        "noDamageFrom": [
+            "8"
+        ],
+        "noDamageTo": [
+            "8"
+        ]
+    },
+    {
+        "idType": 2,
+        "doubleDamageFrom": [
+            "3",
+            "14",
+            "18"
+        ],
+        "doubleDamageTo": [
+            "1",
+            "6",
+            "9",
+            "15",
+            "17"
+        ],
+        "halfDamageFrom": [
+            "6",
+            "7",
+            "17"
+        ],
+        "halfDamageTo": [
+            "3",
+            "4",
+            "7",
+            "14",
+            "18"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": [
+            "8"
+        ]
+    },
+    {
+        "idType": 3,
+        "doubleDamageFrom": [
+            "6",
+            "13",
+            "15"
+        ],
+        "doubleDamageTo": [
+            "2",
+            "7",
+            "12"
+        ],
+        "halfDamageFrom": [
+            "2",
+            "7",
+            "12"
+        ],
+        "halfDamageTo": [
+            "6",
+            "9",
+            "13"
+        ],
+        "noDamageFrom": [
+            "5"
+        ],
+        "noDamageTo": []
+    },
+    {
+        "idType": 4,
+        "doubleDamageFrom": [
+            "5",
+            "14"
+        ],
+        "doubleDamageTo": [
+            "12",
+            "18"
+        ],
+        "halfDamageFrom": [
+            "2",
+            "4",
+            "7",
+            "12",
+            "18"
+        ],
+        "halfDamageTo": [
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": [
+            "9"
+        ]
+    },
+    {
+        "idType": 5,
+        "doubleDamageFrom": [
+            "11",
+            "12",
+            "15"
+        ],
+        "doubleDamageTo": [
+            "4",
+            "6",
+            "9",
+            "10",
+            "13"
+        ],
+        "halfDamageFrom": [
+            "4",
+            "6"
+        ],
+        "halfDamageTo": [
+            "7",
+            "12"
+        ],
+        "noDamageFrom": [
+            "13"
+        ],
+        "noDamageTo": [
+            "3"
+        ]
+    },
+    {
+        "idType": 6,
+        "doubleDamageFrom": [
+            "2",
+            "5",
+            "9",
+            "11",
+            "12"
+        ],
+        "doubleDamageTo": [
+            "3",
+            "7",
+            "10",
+            "15"
+        ],
+        "halfDamageFrom": [
+            "1",
+            "3",
+            "4",
+            "10"
+        ],
+        "halfDamageTo": [
+            "2",
+            "5",
+            "9"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 7,
+        "doubleDamageFrom": [
+            "3",
+            "6",
+            "10"
+        ],
+        "doubleDamageTo": [
+            "12",
+            "14",
+            "17"
+        ],
+        "halfDamageFrom": [
+            "2",
+            "5",
+            "12"
+        ],
+        "halfDamageTo": [
+            "2",
+            "3",
+            "4",
+            "8",
+            "9",
+            "10",
+            "18"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 8,
+        "doubleDamageFrom": [
+            "8",
+            "17"
+        ],
+        "doubleDamageTo": [
+            "8",
+            "14"
+        ],
+        "halfDamageFrom": [
+            "4",
+            "7"
+        ],
+        "halfDamageTo": [
+            "17"
+        ],
+        "noDamageFrom": [
+            "1",
+            "2"
+        ],
+        "noDamageTo": [
+            "1"
+        ]
+    },
+    {
+        "idType": 9,
+        "doubleDamageFrom": [
+            "2",
+            "5",
+            "10"
+        ],
+        "doubleDamageTo": [
+            "6",
+            "15",
+            "18"
+        ],
+        "halfDamageFrom": [
+            "1",
+            "3",
+            "6",
+            "7",
+            "9",
+            "12",
+            "14",
+            "15",
+            "16",
+            "18"
+        ],
+        "halfDamageTo": [
+            "9",
+            "10",
+            "11",
+            "13"
+        ],
+        "noDamageFrom": [
+            "4"
+        ],
+        "noDamageTo": []
+    },
+    {
+        "idType": 10,
+        "doubleDamageFrom": [
+            "5",
+            "6",
+            "11"
+        ],
+        "doubleDamageTo": [
+            "7",
+            "9",
+            "12",
+            "15"
+        ],
+        "halfDamageFrom": [
+            "7",
+            "9",
+            "10",
+            "12",
+            "15",
+            "18"
+        ],
+        "halfDamageTo": [
+            "6",
+            "10",
+            "11",
+            "16"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 11,
+        "doubleDamageFrom": [
+            "12",
+            "13"
+        ],
+        "doubleDamageTo": [
+            "5",
+            "6",
+            "10"
+        ],
+        "halfDamageFrom": [
+            "9",
+            "10",
+            "11",
+            "15"
+        ],
+        "halfDamageTo": [
+            "11",
+            "12",
+            "16"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 12,
+        "doubleDamageFrom": [
+            "3",
+            "4",
+            "7",
+            "10",
+            "15"
+        ],
+        "doubleDamageTo": [
+            "5",
+            "6",
+            "11"
+        ],
+        "halfDamageFrom": [
+            "5",
+            "11",
+            "12",
+            "13"
+        ],
+        "halfDamageTo": [
+            "3",
+            "4",
+            "7",
+            "9",
+            "10",
+            "12",
+            "16"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 13,
+        "doubleDamageFrom": [
+            "5"
+        ],
+        "doubleDamageTo": [
+            "3",
+            "11"
+        ],
+        "halfDamageFrom": [
+            "3",
+            "9",
+            "13"
+        ],
+        "halfDamageTo": [
+            "12",
+            "13",
+            "16"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": [
+            "5"
+        ]
+    },
+    {
+        "idType": 14,
+        "doubleDamageFrom": [
+            "7",
+            "8",
+            "17"
+        ],
+        "doubleDamageTo": [
+            "2",
+            "4"
+        ],
+        "halfDamageFrom": [
+            "2",
+            "14"
+        ],
+        "halfDamageTo": [
+            "9",
+            "14"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": [
+            "17"
+        ]
+    },
+    {
+        "idType": 15,
+        "doubleDamageFrom": [
+            "2",
+            "6",
+            "9",
+            "10"
+        ],
+        "doubleDamageTo": [
+            "3",
+            "5",
+            "12",
+            "16"
+        ],
+        "halfDamageFrom": [
+            "15"
+        ],
+        "halfDamageTo": [
+            "9",
+            "10",
+            "11",
+            "15"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": []
+    },
+    {
+        "idType": 16,
+        "doubleDamageFrom": [
+            "15",
+            "16",
+            "18"
+        ],
+        "doubleDamageTo": [
+            "16"
+        ],
+        "halfDamageFrom": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "halfDamageTo": [
+            "9"
+        ],
+        "noDamageFrom": [],
+        "noDamageTo": [
+            "18"
+        ]
+    },
+    {
+        "idType": 17,
+        "doubleDamageFrom": [
+            "2",
+            "7",
+            "18"
+        ],
+        "doubleDamageTo": [
+            "8",
+            "14"
+        ],
+        "halfDamageFrom": [
+            "8",
+            "17"
+        ],
+        "halfDamageTo": [
+            "2",
+            "17",
+            "18"
+        ],
+        "noDamageFrom": [
+            "14"
+        ],
+        "noDamageTo": []
+    },
+    {
+        "idType": 18,
+        "doubleDamageFrom": [
+            "4",
+            "9"
+        ],
+        "doubleDamageTo": [
+            "2",
+            "16",
+            "17"
+        ],
+        "halfDamageFrom": [
+            "2",
+            "7",
+            "17"
+        ],
+        "halfDamageTo": [
+            "4",
+            "9",
+            "10"
+        ],
+        "noDamageFrom": [
+            "16"
+        ],
+        "noDamageTo": []
+    }
+]
