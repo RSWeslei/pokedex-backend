@@ -40,15 +40,12 @@ const getByPokemon = async (req, res) => {
                 })
                 resistance.name = type.name
             }
-
-            return res.status(200).send({
-                type: 'sucess',
-                message: 'Tipos de resistencia recuperados com sucesso',
-                data: resistances
-            })
         }
-
-
+        return res.status(200).send({
+            type: 'sucess',
+            message: 'Tipos de resistencia recuperados com sucesso',
+            data: resistances
+        })
     } catch (error) {
         return res.status(500).send({
             type: 'error',
