@@ -7,6 +7,7 @@
   "author": "Weslei Rosniak",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/translate": "^7.0.2",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
@@ -15,7 +16,8 @@
     "morgan": "^1.10.0",
     "npx": "^3.0.0",
     "pg": "^8.7.3",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "translate": "^1.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.19",
@@ -25,7 +27,9 @@
     "dev": "env NODE_ENV=development nodemon src/index.js"
   },
   "nodemonConfig": {
-    "ignore": ["src/json/*.json"]
+    "ignore": [
+      "src/json/*.json"
+    ]
   },
   "engines": {
     "node": "17.1.0"

@@ -7,8 +7,6 @@ import PokemonAbility from "./sequelize/models/PokemonAbility"
 import PokemonType from "./sequelize/models/PokemonType"
 import Stat from "./sequelize/models/Stat"
 import Type from "./sequelize/models/Type"
-import TypeResistance from "./sequelize/models/TypeResistance"
-import TypeWeakness from "./sequelize/models/TypeWeakness"
 import TypeDamageRelation from "./sequelize/models/TypeDamageRelation"
 
 const getAbilities = async () => {
@@ -224,8 +222,10 @@ const getPokemons = async () => {
     try {
         for (let i = 1; i <= pokemonQtd; i++) {
             let response = null
+            let responseSpecies = null
             try {
                 response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
+                responseSpecies = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${i}`)
             } catch (error) {
                 continue
             }
@@ -234,12 +234,43 @@ const getPokemons = async () => {
             await getStat(response.data.stats)
             let name = response.data.species.name
             let nameFixed = name.charAt(0).toUpperCase() + name.slice(1)
+
+            let texts = responseSpecies.data.flavor_text_entries
+            let description = ''
+            try {
+                description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'soulsilver')))
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'black')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'x')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'sun')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'ultra-sun')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'lets-go-pikachu')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'sword')))
+                }
+                if (description === undefined) {
+                    description = texts.find(text => (text.language.name === 'en' && (text.version.name === 'legends-arceus')))
+                }
+                description = description.flavor_text
+            } catch (error) {
+                continue
+            }
             let pokemon = {
                 id: response.data.id,
                 name: nameFixed,
-                height: response.data.height,
-                weight: response.data.weight,
+                height: response.data.height / 10,
+                weight: response.data.weight / 10,
                 images: images,
+                description: description,
                 idStat: stats.length
             }
             let abilitiesData = response.data.abilities.map(ability => {
@@ -256,7 +287,6 @@ const getPokemons = async () => {
             pokemons.push(pokemon)
             console.log(`Pokemon ${i}/${pokemonQtd}`)
         }
-        console.log(abilities);
         //#region Insert Pokemon
 
         // save pokemon_abilities in a json file
@@ -336,16 +366,6 @@ async function main() {
         let damageRelation = JSON.parse(fs.readFileSync('./src/json/damage_relation.json'))
         for (let i = 0; i < damageRelation.length; i++) {
             let response = await TypeDamageRelation.create(damageRelation[i])
-        }
-        // get json file type_weaknesses ./json/type_weaknesses.json
-        let typeWeaknesses = JSON.parse(fs.readFileSync('./src/json/type_weakness.json'))
-        for (let i = 0; i < typeWeaknesses.length; i++) {
-            let response = await TypeWeakness.create(typeWeaknesses[i])
-        }
-        // get json file type_resistances ./json/type_resistances.json
-        let typeResistances = JSON.parse(fs.readFileSync('./src/json/type_resistance.json'))
-        for (let i = 0; i < typeResistances.length; i++) {
-            let response = await TypeResistance.create(typeResistances[i])
         }
         // get json file stats ./json/stats.json
         let stats = JSON.parse(fs.readFileSync('./src/json/stats.json'))
