@@ -25,6 +25,10 @@ const Pokemon = sequelize.define(
         images: {
             type: DataTypes.JSONB,
             allowNull: false
+        },
+        description: {
+            type: DataTypes.TEXT,
+            allowNull: false
         }
     },
     {
