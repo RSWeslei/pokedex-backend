@@ -1,8 +1,4 @@
 import Pokemon from "../sequelize/models/Pokemon";
-import PokemonAbility from "../sequelize/models/PokemonAbility";
-import PokemonType from "../sequelize/models/PokemonType";
-import Stat from "../sequelize/models/Stat";
-import Type from "../sequelize/models/Type";
 
 const get = async (req, res) => {
     try {
