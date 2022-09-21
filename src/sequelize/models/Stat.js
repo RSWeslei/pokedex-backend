@@ -34,14 +34,45 @@ const Stat = sequelize.define(
             type: DataTypes.NUMERIC(10, 4),
             allowNull: false,
             defaultValue: 0
-        }
+        },
+        minHp: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+        minAttack: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+        minDefense: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+        minSpeed: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+        minSpecialAttack: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+        minSpecialDefense: {
+            type: DataTypes.NUMERIC(10, 4),
+            allowNull: false,
+            defaultValue: 0
+        },
+
     },
     {
         freezeTableName: true,
         timestamps: true,
         createdAt: false,
         updatedAt: false,
-    }
+    },
 );
 
 export default Stat

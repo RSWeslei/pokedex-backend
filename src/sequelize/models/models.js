@@ -23,6 +23,7 @@ async function start () {
 	await getApi()
 }
 async function getApi() {
+
 	// await populator.getAbilities()
 	// await populator.getEvolutionsChain()
 	// await populator.getTypes()0

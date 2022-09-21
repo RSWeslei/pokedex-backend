@@ -8,6 +8,6 @@ export const sequelize = new Sequelize(
     {
         host: process.env.POSTGRES_HOST,
         dialect: 'postgres',
-        logging: false
+        // logging: false
     }
 );

@@ -29,6 +29,10 @@ const Pokemon = sequelize.define(
         description: {
             type: DataTypes.TEXT,
             allowNull: false
+        },
+        generation: {
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
     },
     {
