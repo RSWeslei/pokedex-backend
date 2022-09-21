@@ -164,7 +164,7 @@ const getTypeDamageRelations = async () => {
 }
 
 let stats = []
-const getStat = async (pokemon) => {
+const getStat = async (pokemon, generation) => {
     try {
         let stat = {
             hp: pokemon[0].base_stat,
@@ -172,12 +172,43 @@ const getStat = async (pokemon) => {
             defense: pokemon[2].base_stat,
             speed: pokemon[5].base_stat,
             specialAttack: pokemon[3].base_stat,
-            specialDefense: pokemon[4].base_stat
+            specialDefense: pokemon[4].base_stat,
+            minHp: getMinStat(pokemon[0].base_stat, 'hp', generation),
+            minAttack: getMinStat(pokemon[1].base_stat, 'attack', generation),
+            minDefense: getMinStat(pokemon[2].base_stat, 'defense', generation),
+            minSpeed: getMinStat(pokemon[5].base_stat, 'speed', generation),
+            minSpecialAttack: getMinStat(pokemon[3].base_stat, 'specialAttack', generation),
+            minSpecialDefense: getMinStat(pokemon[4].base_stat, 'specialDefense', generation),
         }
+        
+        
         stats.push(stat)
     } catch (error) {
         console.log(error);
         return
+    }
+}
+
+const getMinStat = (base, name, generation) => {
+    let dv = 0
+    let ev = 0 
+    let level = 100
+    let nature = 0.9
+
+    if (generation == 1 || generation == 2) {
+        if (name == 'hp') {
+            return Math.floor(((base + dv) * 2 + Math.floor(Math.ceil(Math.sqrt(ev)) / 4)) * level / 100) + level + 10
+        } else {
+            return Math.floor(((base + dv) * 2 + Math.floor(Math.ceil(Math.sqrt(ev)) / 4)) * level / 100) + 5
+        }
+    }
+    else if (generation >= 3) {
+        if (name == 'hp') {
+            return Math.floor(((2 * base + dv + Math.floor(ev / 4)) * level) / 100) + level + 10
+        }
+        else {
+            return Math.floor((Math.floor(((2 * base + dv + Math.floor(ev / 4)) * level) / 100) + 5) * nature)
+        }
     }
 }
 
@@ -231,7 +262,13 @@ const getPokemons = async () => {
             }
             
             let images = await getImages(response)
-            await getStat(response.data.stats)
+            let generation = responseSpecies.data.generation.name.split('-')[1]
+            generation = generation == 'i' ? 1 : generation == 'ii' ? 2 : 
+            generation == 'iii' ? 3 : generation == 'iv' ? 4 : 
+            generation == 'v' ? 5 : generation == 'vi' ? 6 : 
+            generation == 'vii' ? 7 : generation == 'viii' ? 8 : 0
+
+            await getStat(response.data.stats, generation)
             let name = response.data.species.name
             let nameFixed = name.charAt(0).toUpperCase() + name.slice(1)
 
@@ -264,6 +301,7 @@ const getPokemons = async () => {
             } catch (error) {
                 continue
             }
+
             let pokemon = {
                 id: response.data.id,
                 name: nameFixed,
@@ -271,7 +309,8 @@ const getPokemons = async () => {
                 weight: response.data.weight / 10,
                 images: images,
                 description: description,
-                idStat: stats.length
+                idStat: stats.length,
+                generation: generation
             }
             let abilitiesData = response.data.abilities.map(ability => {
                 return {
