@@ -55,6 +55,61 @@ const getByPokemon = async (req, res) => {
     }
 }
 
+const getBy = async (types) => {
+    try {
+        let resistances = []
+        for (const type of types) {
+            let response = await TypeDamageRelation.findOne({
+                where: {
+                    idType: type
+                }
+            })
+
+            let doubleDamageFrom = response.doubleDamageFrom
+            let halfDamageFrom = response.halfDamageFrom
+            let noDamageFrom = response.noDamageFrom
+
+            for (const idType of doubleDamageFrom) {
+                let index = resistances.findIndex(resistance => resistance.idType === idType)
+                if (index === -1) {
+                    resistances.push({idType: idType, value: 2})
+                } else {
+                    resistances[index].value *= 2
+                }
+            }
+            for (const idType of halfDamageFrom) {
+                let index = resistances.findIndex(resistance => resistance.idType === idType)
+                if (index === -1) {
+                    resistances.push({idType: idType, value: 0.5})
+                } else {
+                    resistances[index].value *= 0.5
+                }
+            }
+            for (const noDamage of noDamageFrom) {
+                let index = resistances.findIndex(resistance => resistance.idType === noDamage)
+                if (index === -1) {
+                    resistances.push({idType: noDamage, value: 0})
+                } else {
+                    resistances[index].value = 0
+                }
+            }
+            resistances = resistances.filter(resistance => resistance.value !== 1)
+            for (const resistance of resistances) {
+                let type = await Type.findOne({
+                    where: {
+                        id: resistance.idType
+                    }
+                })
+                resistance.name = type.name
+            }
+        }
+        return resistances
+    } catch (error) {
+        return null
+    }
+}
+
 export default {
-    getByPokemon
+    getByPokemon,
+    getBy
 }
