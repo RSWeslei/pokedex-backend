@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { sequelize } from "./../../config/config";
+import { sequelize } from "../../config/config";
 
 const BaseModel = sequelize.define(
     'nome',

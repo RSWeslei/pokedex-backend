@@ -8,6 +8,7 @@ import PokemonType from "./PokemonType"
 import EvolutionChain from "./EvolutionChain"
 import populator from '../../populator'
 import TypeDamageRelation from "./TypeDamageRelation"
+import User from "./User"
 
 let sync = true
 async function start () {
@@ -20,6 +21,7 @@ async function start () {
 		await PokemonType.sync({force: sync})
 		await EvolutionChain.sync({force: sync})
 		await TypeDamageRelation.sync({force: sync})
+		await User.sync({force: sync})
 	
 		await getApi()
 	} catch (error) {

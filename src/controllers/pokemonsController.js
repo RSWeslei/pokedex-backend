@@ -86,7 +86,7 @@ const getAll = async (req, res) => {
     try {
         let response = await Pokemon.findAll({
             limit: 20,
-            attributes: ['id', 'name'],
+            attributes: ['id', 'name', 'images'],
             order: [
                 ['id', 'ASC']
             ]
@@ -94,8 +94,11 @@ const getAll = async (req, res) => {
         let pokemons = JSON.parse(JSON.stringify(response))
         let i = 0
         for (let pokemon of response) {
-            let types = await pokemon.getTypes()
-            types.forEach(type => delete type.dataValues.pokemon_types)
+            let types = await pokemon.getTypes({
+                //dont include the pokemon_types table
+                attributes: ['id', 'name', 'color']
+                
+            })
             pokemons[i].types = types
             i++
         }
