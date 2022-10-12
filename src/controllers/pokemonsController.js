@@ -134,7 +134,6 @@ const getEvolutionChain = async (evolution) => {
 }
 
 export default {
-    get,
     getAll,
     getById
 }
