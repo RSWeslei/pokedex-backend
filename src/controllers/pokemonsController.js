@@ -14,11 +14,10 @@ const getAll = async (req, res) => {
         let i = 0
         for (let pokemon of response) {
             let types = await pokemon.getTypes({
-                //dont include the pokemon_types table
                 attributes: ['id', 'name', 'color']
-                
             })
             pokemons[i].types = types
+            delete pokemons[i].images.animated
             i++
         }
         if (!response) {
@@ -127,6 +126,8 @@ const getEvolutionChain = async (evolution) => {
 
     return {
         id: evolution.id,
+        firstEvolutionLevel: evolution.firstEvolutionLevel || null,
+        secondEvolutionLevel: evolution.secondEvolutionLevel || null,
         firstEvolution: firstEvolution,
         secondEvolution: secondEvolution,
         thirdEvolution: thirdEvolution

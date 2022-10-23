@@ -227,8 +227,13 @@ const getEvolutionsChain = async () => {
             }
             let firstExist = response.data.chain.evolves_to.length > 0
             let thirdExist = firstExist ? response.data.chain.evolves_to[0].evolves_to.length > 0 : false
+            let firstDetailsExist = firstExist ? response.data.chain.evolves_to[0].evolution_details.length > 0 : false
+            let thirdDetailsExist = thirdExist ? response.data.chain.evolves_to[0].evolves_to[0].evolution_details.length > 0 : false
+            
             let evolutionChain = {
                 id: response.data.id,
+                firstEvolutionLevel: firstExist && firstDetailsExist ? response.data.chain.evolves_to[0].evolution_details[0].min_level : null,
+                secondEvolutionLevel: thirdExist && thirdDetailsExist ? response.data.chain.evolves_to[0].evolves_to[0].evolution_details[0].min_level : null,
                 firstEvolution: response.data.chain.species.url.split('/')[6],
                 secondEvolution: firstExist ? response.data.chain.evolves_to[0].species.url.split('/')[6] : null,
                 thirdEvolution: thirdExist ? response.data.chain.evolves_to[0].evolves_to[0].species.url.split('/')[6] : null

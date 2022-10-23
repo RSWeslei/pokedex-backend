@@ -1,2760 +1,3680 @@
 [
     {
         "id": 1,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 32,
         "firstEvolution": "1",
         "secondEvolution": "2",
         "thirdEvolution": "3"
     },
     {
         "id": 2,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "4",
         "secondEvolution": "5",
         "thirdEvolution": "6"
     },
     {
         "id": 3,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "7",
         "secondEvolution": "8",
         "thirdEvolution": "9"
     },
     {
         "id": 4,
+        "firstEvolutionLevel": 7,
+        "secondEvolutionLevel": 10,
         "firstEvolution": "10",
         "secondEvolution": "11",
         "thirdEvolution": "12"
     },
     {
         "id": 5,
+        "firstEvolutionLevel": 7,
+        "secondEvolutionLevel": 10,
         "firstEvolution": "13",
         "secondEvolution": "14",
         "thirdEvolution": "15"
     },
     {
         "id": 6,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "16",
         "secondEvolution": "17",
         "thirdEvolution": "18"
     },
     {
         "id": 7,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "19",
         "secondEvolution": "20",
         "thirdEvolution": null
     },
     {
         "id": 8,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "21",
         "secondEvolution": "22",
         "thirdEvolution": null
     },
     {
         "id": 9,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "23",
         "secondEvolution": "24",
         "thirdEvolution": null
     },
     {
         "id": 10,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "172",
         "secondEvolution": "25",
         "thirdEvolution": "26"
     },
     {
         "id": 11,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "27",
         "secondEvolution": "28",
         "thirdEvolution": null
     },
     {
         "id": 12,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": null,
         "firstEvolution": "29",
         "secondEvolution": "30",
         "thirdEvolution": "31"
     },
     {
         "id": 13,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": null,
         "firstEvolution": "32",
         "secondEvolution": "33",
         "thirdEvolution": "34"
     },
     {
         "id": 14,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "173",
         "secondEvolution": "35",
         "thirdEvolution": "36"
     },
     {
         "id": 15,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "37",
         "secondEvolution": "38",
         "thirdEvolution": null
     },
     {
         "id": 16,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "174",
         "secondEvolution": "39",
         "thirdEvolution": "40"
     },
     {
         "id": 17,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "41",
         "secondEvolution": "42",
         "thirdEvolution": "169"
     },
     {
         "id": 18,
+        "firstEvolutionLevel": 21,
+        "secondEvolutionLevel": null,
         "firstEvolution": "43",
         "secondEvolution": "44",
         "thirdEvolution": "45"
     },
     {
         "id": 19,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "46",
         "secondEvolution": "47",
         "thirdEvolution": null
     },
     {
         "id": 20,
+        "firstEvolutionLevel": 31,
+        "secondEvolutionLevel": null,
         "firstEvolution": "48",
         "secondEvolution": "49",
         "thirdEvolution": null
     },
     {
         "id": 21,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "50",
         "secondEvolution": "51",
         "thirdEvolution": null
     },
     {
         "id": 22,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "52",
         "secondEvolution": "53",
         "thirdEvolution": null
     },
     {
         "id": 23,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "54",
         "secondEvolution": "55",
         "thirdEvolution": null
     },
     {
         "id": 24,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "56",
         "secondEvolution": "57",
         "thirdEvolution": null
     },
     {
         "id": 25,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "58",
         "secondEvolution": "59",
         "thirdEvolution": null
     },
     {
         "id": 26,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "60",
         "secondEvolution": "61",
         "thirdEvolution": "62"
     },
     {
         "id": 27,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": null,
         "firstEvolution": "63",
         "secondEvolution": "64",
         "thirdEvolution": "65"
     },
     {
         "id": 28,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "66",
         "secondEvolution": "67",
         "thirdEvolution": "68"
     },
     {
         "id": 29,
+        "firstEvolutionLevel": 21,
+        "secondEvolutionLevel": null,
         "firstEvolution": "69",
         "secondEvolution": "70",
         "thirdEvolution": "71"
     },
     {
         "id": 30,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "72",
         "secondEvolution": "73",
         "thirdEvolution": null
     },
     {
         "id": 31,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "74",
         "secondEvolution": "75",
         "thirdEvolution": "76"
     },
     {
         "id": 32,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "77",
         "secondEvolution": "78",
         "thirdEvolution": null
     },
     {
         "id": 33,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "79",
         "secondEvolution": "80",
         "thirdEvolution": null
     },
     {
         "id": 34,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "81",
         "secondEvolution": "82",
         "thirdEvolution": "462"
     },
     {
         "id": 35,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "83",
         "secondEvolution": "865",
         "thirdEvolution": null
     },
     {
         "id": 36,
+        "firstEvolutionLevel": 31,
+        "secondEvolutionLevel": null,
         "firstEvolution": "84",
         "secondEvolution": "85",
         "thirdEvolution": null
     },
     {
         "id": 37,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "86",
         "secondEvolution": "87",
         "thirdEvolution": null
     },
     {
         "id": 38,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": null,
         "firstEvolution": "88",
         "secondEvolution": "89",
         "thirdEvolution": null
     },
     {
         "id": 39,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "90",
         "secondEvolution": "91",
         "thirdEvolution": null
     },
     {
         "id": 40,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "92",
         "secondEvolution": "93",
         "thirdEvolution": "94"
     },
     {
         "id": 41,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "95",
         "secondEvolution": "208",
         "thirdEvolution": null
     },
     {
         "id": 42,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "96",
         "secondEvolution": "97",
         "thirdEvolution": null
     },
     {
         "id": 43,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "98",
         "secondEvolution": "99",
         "thirdEvolution": null
     },
     {
         "id": 44,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "100",
         "secondEvolution": "101",
         "thirdEvolution": null
     },
     {
         "id": 45,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "102",
         "secondEvolution": "103",
         "thirdEvolution": null
     },
     {
         "id": 46,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "104",
         "secondEvolution": "105",
         "thirdEvolution": null
     },
     {
         "id": 47,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "236",
         "secondEvolution": "106",
         "thirdEvolution": null
     },
     {
         "id": 48,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "108",
         "secondEvolution": "463",
         "thirdEvolution": null
     },
     {
         "id": 49,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "109",
         "secondEvolution": "110",
         "thirdEvolution": null
     },
     {
         "id": 50,
+        "firstEvolutionLevel": 42,
+        "secondEvolutionLevel": null,
         "firstEvolution": "111",
         "secondEvolution": "112",
         "thirdEvolution": "464"
     },
     {
         "id": 51,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "440",
         "secondEvolution": "113",
         "thirdEvolution": "242"
     },
     {
         "id": 52,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "114",
         "secondEvolution": "465",
         "thirdEvolution": null
     },
     {
         "id": 53,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "115",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 54,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": null,
         "firstEvolution": "116",
         "secondEvolution": "117",
         "thirdEvolution": "230"
     },
     {
         "id": 55,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "118",
         "secondEvolution": "119",
         "thirdEvolution": null
     },
     {
         "id": 56,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "120",
         "secondEvolution": "121",
         "thirdEvolution": null
     },
     {
         "id": 57,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": 42,
         "firstEvolution": "439",
         "secondEvolution": "122",
         "thirdEvolution": "866"
     },
     {
         "id": 58,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "123",
         "secondEvolution": "212",
         "thirdEvolution": null
     },
     {
         "id": 59,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "238",
         "secondEvolution": "124",
         "thirdEvolution": null
     },
     {
         "id": 60,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "239",
         "secondEvolution": "125",
         "thirdEvolution": "466"
     },
     {
         "id": 61,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "240",
         "secondEvolution": "126",
         "thirdEvolution": "467"
     },
     {
         "id": 62,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "127",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 63,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "128",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 64,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "129",
         "secondEvolution": "130",
         "thirdEvolution": null
     },
     {
         "id": 65,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "131",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 66,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "132",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 67,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "133",
         "secondEvolution": "134",
         "thirdEvolution": null
     },
     {
         "id": 68,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "137",
         "secondEvolution": "233",
         "thirdEvolution": "474"
     },
     {
         "id": 69,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "138",
         "secondEvolution": "139",
         "thirdEvolution": null
     },
     {
         "id": 70,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "140",
         "secondEvolution": "141",
         "thirdEvolution": null
     },
     {
         "id": 71,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "142",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 72,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "446",
         "secondEvolution": "143",
         "thirdEvolution": null
     },
     {
         "id": 73,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "144",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 74,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "145",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 75,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "146",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 76,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": 55,
         "firstEvolution": "147",
         "secondEvolution": "148",
         "thirdEvolution": "149"
     },
     {
         "id": 77,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "150",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 78,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "151",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 79,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 32,
         "firstEvolution": "152",
         "secondEvolution": "153",
         "thirdEvolution": "154"
     },
     {
         "id": 80,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "155",
         "secondEvolution": "156",
         "thirdEvolution": "157"
     },
     {
         "id": 81,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "158",
         "secondEvolution": "159",
         "thirdEvolution": "160"
     },
     {
         "id": 82,
+        "firstEvolutionLevel": 15,
+        "secondEvolutionLevel": null,
         "firstEvolution": "161",
         "secondEvolution": "162",
         "thirdEvolution": null
     },
     {
         "id": 83,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "163",
         "secondEvolution": "164",
         "thirdEvolution": null
     },
     {
         "id": 84,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": null,
         "firstEvolution": "165",
         "secondEvolution": "166",
         "thirdEvolution": null
     },
     {
         "id": 85,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "167",
         "secondEvolution": "168",
         "thirdEvolution": null
     },
     {
         "id": 86,
+        "firstEvolutionLevel": 27,
+        "secondEvolutionLevel": null,
         "firstEvolution": "170",
         "secondEvolution": "171",
         "thirdEvolution": null
     },
     {
         "id": 87,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "175",
         "secondEvolution": "176",
         "thirdEvolution": "468"
     },
     {
         "id": 88,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "177",
         "secondEvolution": "178",
         "thirdEvolution": null
     },
     {
         "id": 89,
+        "firstEvolutionLevel": 15,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "179",
         "secondEvolution": "180",
         "thirdEvolution": "181"
     },
     {
         "id": 90,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": 18,
         "firstEvolution": "298",
         "secondEvolution": "183",
         "thirdEvolution": "184"
     },
     {
         "id": 91,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "438",
         "secondEvolution": "185",
         "thirdEvolution": null
     },
     {
         "id": 92,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 27,
         "firstEvolution": "187",
         "secondEvolution": "188",
         "thirdEvolution": "189"
     },
     {
         "id": 93,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "190",
         "secondEvolution": "424",
         "thirdEvolution": null
     },
     {
         "id": 94,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "191",
         "secondEvolution": "192",
         "thirdEvolution": null
     },
     {
         "id": 95,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "193",
         "secondEvolution": "469",
         "thirdEvolution": null
     },
     {
         "id": 96,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "194",
         "secondEvolution": "195",
         "thirdEvolution": null
     },
     {
         "id": 97,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "198",
         "secondEvolution": "430",
         "thirdEvolution": null
     },
     {
         "id": 98,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "200",
         "secondEvolution": "429",
         "thirdEvolution": null
     },
     {
         "id": 99,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "201",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 100,
+        "firstEvolutionLevel": 15,
+        "secondEvolutionLevel": null,
         "firstEvolution": "360",
         "secondEvolution": "202",
         "thirdEvolution": null
     },
     {
         "id": 101,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "203",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 102,
+        "firstEvolutionLevel": 31,
+        "secondEvolutionLevel": null,
         "firstEvolution": "204",
         "secondEvolution": "205",
         "thirdEvolution": null
     },
     {
         "id": 103,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "206",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 104,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "207",
         "secondEvolution": "472",
         "thirdEvolution": null
     },
     {
         "id": 105,
+        "firstEvolutionLevel": 23,
+        "secondEvolutionLevel": null,
         "firstEvolution": "209",
         "secondEvolution": "210",
         "thirdEvolution": null
     },
     {
         "id": 106,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "211",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 107,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "213",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 108,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "214",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 109,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "215",
         "secondEvolution": "461",
         "thirdEvolution": null
     },
     {
         "id": 110,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "216",
         "secondEvolution": "217",
         "thirdEvolution": null
     },
     {
         "id": 111,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": null,
         "firstEvolution": "218",
         "secondEvolution": "219",
         "thirdEvolution": null
     },
     {
         "id": 112,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "220",
         "secondEvolution": "221",
         "thirdEvolution": "473"
     },
     {
         "id": 113,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": null,
         "firstEvolution": "222",
         "secondEvolution": "864",
         "thirdEvolution": null
     },
     {
         "id": 114,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "223",
         "secondEvolution": "224",
         "thirdEvolution": null
     },
     {
         "id": 115,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "225",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 116,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "458",
         "secondEvolution": "226",
         "thirdEvolution": null
     },
     {
         "id": 117,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "227",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 118,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "228",
         "secondEvolution": "229",
         "thirdEvolution": null
     },
     {
         "id": 119,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "231",
         "secondEvolution": "232",
         "thirdEvolution": null
     },
     {
         "id": 120,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "234",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 121,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "235",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 122,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "241",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 123,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "243",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 124,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "244",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 125,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "245",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 126,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": 55,
         "firstEvolution": "246",
         "secondEvolution": "247",
         "thirdEvolution": "248"
     },
     {
         "id": 127,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "249",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 128,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "250",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 129,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "251",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 130,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "252",
         "secondEvolution": "253",
         "thirdEvolution": "254"
     },
     {
         "id": 131,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "255",
         "secondEvolution": "256",
         "thirdEvolution": "257"
     },
     {
         "id": 132,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "258",
         "secondEvolution": "259",
         "thirdEvolution": "260"
     },
     {
         "id": 133,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": null,
         "firstEvolution": "261",
         "secondEvolution": "262",
         "thirdEvolution": null
     },
     {
         "id": 134,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": 35,
         "firstEvolution": "263",
         "secondEvolution": "264",
         "thirdEvolution": "862"
     },
     {
         "id": 135,
+        "firstEvolutionLevel": 7,
+        "secondEvolutionLevel": 10,
         "firstEvolution": "265",
         "secondEvolution": "266",
         "thirdEvolution": "267"
     },
     {
         "id": 136,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": null,
         "firstEvolution": "270",
         "secondEvolution": "271",
         "thirdEvolution": "272"
     },
     {
         "id": 137,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": null,
         "firstEvolution": "273",
         "secondEvolution": "274",
         "thirdEvolution": "275"
     },
     {
         "id": 138,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "276",
         "secondEvolution": "277",
         "thirdEvolution": null
     },
     {
         "id": 139,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "278",
         "secondEvolution": "279",
         "thirdEvolution": null
     },
     {
         "id": 140,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "280",
         "secondEvolution": "281",
         "thirdEvolution": "282"
     },
     {
         "id": 141,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "283",
         "secondEvolution": "284",
         "thirdEvolution": null
     },
     {
         "id": 142,
+        "firstEvolutionLevel": 23,
+        "secondEvolutionLevel": null,
         "firstEvolution": "285",
         "secondEvolution": "286",
         "thirdEvolution": null
     },
     {
         "id": 143,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "287",
         "secondEvolution": "288",
         "thirdEvolution": "289"
     },
     {
         "id": 144,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "290",
         "secondEvolution": "291",
         "thirdEvolution": null
     },
     {
         "id": 145,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": 40,
         "firstEvolution": "293",
         "secondEvolution": "294",
         "thirdEvolution": "295"
     },
     {
         "id": 146,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "296",
         "secondEvolution": "297",
         "thirdEvolution": null
     },
     {
         "id": 147,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "299",
         "secondEvolution": "476",
         "thirdEvolution": null
     },
     {
         "id": 148,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "300",
         "secondEvolution": "301",
         "thirdEvolution": null
     },
     {
         "id": 149,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "302",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 150,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "303",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 151,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 42,
         "firstEvolution": "304",
         "secondEvolution": "305",
         "thirdEvolution": "306"
     },
     {
         "id": 152,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "307",
         "secondEvolution": "308",
         "thirdEvolution": null
     },
     {
         "id": 153,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "309",
         "secondEvolution": "310",
         "thirdEvolution": null
     },
     {
         "id": 154,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "311",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 155,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "312",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 156,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "313",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 157,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "314",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 158,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "406",
         "secondEvolution": "315",
         "thirdEvolution": "407"
     },
     {
         "id": 159,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "316",
         "secondEvolution": "317",
         "thirdEvolution": null
     },
     {
         "id": 160,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "318",
         "secondEvolution": "319",
         "thirdEvolution": null
     },
     {
         "id": 161,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "320",
         "secondEvolution": "321",
         "thirdEvolution": null
     },
     {
         "id": 162,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "322",
         "secondEvolution": "323",
         "thirdEvolution": null
     },
     {
         "id": 163,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "324",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 164,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": null,
         "firstEvolution": "325",
         "secondEvolution": "326",
         "thirdEvolution": null
     },
     {
         "id": 165,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "327",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 166,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": 45,
         "firstEvolution": "328",
         "secondEvolution": "329",
         "thirdEvolution": "330"
     },
     {
         "id": 167,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": null,
         "firstEvolution": "331",
         "secondEvolution": "332",
         "thirdEvolution": null
     },
     {
         "id": 168,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "333",
         "secondEvolution": "334",
         "thirdEvolution": null
     },
     {
         "id": 169,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "335",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 170,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "336",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 171,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "337",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 172,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "338",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 173,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "339",
         "secondEvolution": "340",
         "thirdEvolution": null
     },
     {
         "id": 174,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "341",
         "secondEvolution": "342",
         "thirdEvolution": null
     },
     {
         "id": 175,
+        "firstEvolutionLevel": 36,
+        "secondEvolutionLevel": null,
         "firstEvolution": "343",
         "secondEvolution": "344",
         "thirdEvolution": null
     },
     {
         "id": 176,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "345",
         "secondEvolution": "346",
         "thirdEvolution": null
     },
     {
         "id": 177,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "347",
         "secondEvolution": "348",
         "thirdEvolution": null
     },
     {
         "id": 178,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "349",
         "secondEvolution": "350",
         "thirdEvolution": null
     },
     {
         "id": 179,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "351",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 180,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "352",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 181,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "353",
         "secondEvolution": "354",
         "thirdEvolution": null
     },
     {
         "id": 182,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "355",
         "secondEvolution": "356",
         "thirdEvolution": "477"
     },
     {
         "id": 183,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "357",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 184,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "433",
         "secondEvolution": "358",
         "thirdEvolution": null
     },
     {
         "id": 185,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "359",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 186,
+        "firstEvolutionLevel": 42,
+        "secondEvolutionLevel": null,
         "firstEvolution": "361",
         "secondEvolution": "362",
         "thirdEvolution": null
     },
     {
         "id": 187,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 44,
         "firstEvolution": "363",
         "secondEvolution": "364",
         "thirdEvolution": "365"
     },
     {
         "id": 188,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "366",
         "secondEvolution": "367",
         "thirdEvolution": null
     },
     {
         "id": 189,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "369",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 190,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "370",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 191,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": 50,
         "firstEvolution": "371",
         "secondEvolution": "372",
         "thirdEvolution": "373"
     },
     {
         "id": 192,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": 45,
         "firstEvolution": "374",
         "secondEvolution": "375",
         "thirdEvolution": "376"
     },
     {
         "id": 193,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "377",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 194,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "378",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 195,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "379",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 196,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "380",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 197,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "381",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 198,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "382",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 199,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "383",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 200,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "384",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 201,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "385",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 202,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "386",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 203,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 32,
         "firstEvolution": "387",
         "secondEvolution": "388",
         "thirdEvolution": "389"
     },
     {
         "id": 204,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "390",
         "secondEvolution": "391",
         "thirdEvolution": "392"
     },
     {
         "id": 205,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "393",
         "secondEvolution": "394",
         "thirdEvolution": "395"
     },
     {
         "id": 206,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": 34,
         "firstEvolution": "396",
         "secondEvolution": "397",
         "thirdEvolution": "398"
     },
     {
         "id": 207,
+        "firstEvolutionLevel": 15,
+        "secondEvolutionLevel": null,
         "firstEvolution": "399",
         "secondEvolution": "400",
         "thirdEvolution": null
     },
     {
         "id": 208,
+        "firstEvolutionLevel": 10,
+        "secondEvolutionLevel": null,
         "firstEvolution": "401",
         "secondEvolution": "402",
         "thirdEvolution": null
     },
     {
         "id": 209,
+        "firstEvolutionLevel": 15,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "403",
         "secondEvolution": "404",
         "thirdEvolution": "405"
     },
     {
         "id": 211,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "408",
         "secondEvolution": "409",
         "thirdEvolution": null
     },
     {
         "id": 212,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "410",
         "secondEvolution": "411",
         "thirdEvolution": null
     },
     {
         "id": 213,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "412",
         "secondEvolution": "413",
         "thirdEvolution": null
     },
     {
         "id": 214,
+        "firstEvolutionLevel": 21,
+        "secondEvolutionLevel": null,
         "firstEvolution": "415",
         "secondEvolution": "416",
         "thirdEvolution": null
     },
     {
         "id": 215,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "417",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 216,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "418",
         "secondEvolution": "419",
         "thirdEvolution": null
     },
     {
         "id": 217,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "420",
         "secondEvolution": "421",
         "thirdEvolution": null
     },
     {
         "id": 218,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "422",
         "secondEvolution": "423",
         "thirdEvolution": null
     },
     {
         "id": 219,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "425",
         "secondEvolution": "426",
         "thirdEvolution": null
     },
     {
         "id": 220,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "427",
         "secondEvolution": "428",
         "thirdEvolution": null
     },
     {
         "id": 221,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": null,
         "firstEvolution": "431",
         "secondEvolution": "432",
         "thirdEvolution": null
     },
     {
         "id": 223,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "434",
         "secondEvolution": "435",
         "thirdEvolution": null
     },
     {
         "id": 224,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "436",
         "secondEvolution": "437",
         "thirdEvolution": null
     },
     {
         "id": 228,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "441",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 229,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "442",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 230,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": 48,
         "firstEvolution": "443",
         "secondEvolution": "444",
         "thirdEvolution": "445"
     },
     {
         "id": 232,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "447",
         "secondEvolution": "448",
         "thirdEvolution": null
     },
     {
         "id": 233,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "449",
         "secondEvolution": "450",
         "thirdEvolution": null
     },
     {
         "id": 234,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "451",
         "secondEvolution": "452",
         "thirdEvolution": null
     },
     {
         "id": 235,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "453",
         "secondEvolution": "454",
         "thirdEvolution": null
     },
     {
         "id": 236,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "455",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 237,
+        "firstEvolutionLevel": 31,
+        "secondEvolutionLevel": null,
         "firstEvolution": "456",
         "secondEvolution": "457",
         "thirdEvolution": null
     },
     {
         "id": 239,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "459",
         "secondEvolution": "460",
         "thirdEvolution": null
     },
     {
         "id": 240,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "479",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 241,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "480",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 242,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "481",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 243,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "482",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 244,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "483",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 245,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "484",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 246,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "485",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 247,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "486",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 248,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "487",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 249,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "488",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 250,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "489",
         "secondEvolution": "490",
         "thirdEvolution": null
     },
     {
         "id": 252,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "491",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 253,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "492",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 254,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "493",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 255,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "494",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 256,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "495",
         "secondEvolution": "496",
         "thirdEvolution": "497"
     },
     {
         "id": 257,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "498",
         "secondEvolution": "499",
         "thirdEvolution": "500"
     },
     {
         "id": 258,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "501",
         "secondEvolution": "502",
         "thirdEvolution": "503"
     },
     {
         "id": 259,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "504",
         "secondEvolution": "505",
         "thirdEvolution": null
     },
     {
         "id": 260,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 32,
         "firstEvolution": "506",
         "secondEvolution": "507",
         "thirdEvolution": "508"
     },
     {
         "id": 261,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "509",
         "secondEvolution": "510",
         "thirdEvolution": null
     },
     {
         "id": 262,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "511",
         "secondEvolution": "512",
         "thirdEvolution": null
     },
     {
         "id": 263,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "513",
         "secondEvolution": "514",
         "thirdEvolution": null
     },
     {
         "id": 264,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "515",
         "secondEvolution": "516",
         "thirdEvolution": null
     },
     {
         "id": 265,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "517",
         "secondEvolution": "518",
         "thirdEvolution": null
     },
     {
         "id": 266,
+        "firstEvolutionLevel": 21,
+        "secondEvolutionLevel": 32,
         "firstEvolution": "519",
         "secondEvolution": "520",
         "thirdEvolution": "521"
     },
     {
         "id": 267,
+        "firstEvolutionLevel": 27,
+        "secondEvolutionLevel": null,
         "firstEvolution": "522",
         "secondEvolution": "523",
         "thirdEvolution": null
     },
     {
         "id": 268,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "524",
         "secondEvolution": "525",
         "thirdEvolution": "526"
     },
     {
         "id": 269,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "527",
         "secondEvolution": "528",
         "thirdEvolution": null
     },
     {
         "id": 270,
+        "firstEvolutionLevel": 31,
+        "secondEvolutionLevel": null,
         "firstEvolution": "529",
         "secondEvolution": "530",
         "thirdEvolution": null
     },
     {
         "id": 271,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "531",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 272,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "532",
         "secondEvolution": "533",
         "thirdEvolution": "534"
     },
     {
         "id": 273,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "535",
         "secondEvolution": "536",
         "thirdEvolution": "537"
     },
     {
         "id": 274,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "538",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 275,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "539",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 276,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "540",
         "secondEvolution": "541",
         "thirdEvolution": "542"
     },
     {
         "id": 277,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "543",
         "secondEvolution": "544",
         "thirdEvolution": "545"
     },
     {
         "id": 278,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "546",
         "secondEvolution": "547",
         "thirdEvolution": null
     },
     {
         "id": 279,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "548",
         "secondEvolution": "549",
         "thirdEvolution": null
     },
     {
         "id": 280,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "550",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 281,
+        "firstEvolutionLevel": 29,
+        "secondEvolutionLevel": 40,
         "firstEvolution": "551",
         "secondEvolution": "552",
         "thirdEvolution": "553"
     },
     {
         "id": 282,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "554",
         "secondEvolution": "555",
         "thirdEvolution": null
     },
     {
         "id": 283,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "556",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 284,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "557",
         "secondEvolution": "558",
         "thirdEvolution": null
     },
     {
         "id": 285,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "559",
         "secondEvolution": "560",
         "thirdEvolution": null
     },
     {
         "id": 286,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "561",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 287,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "562",
         "secondEvolution": "563",
         "thirdEvolution": null
     },
     {
         "id": 288,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "564",
         "secondEvolution": "565",
         "thirdEvolution": null
     },
     {
         "id": 289,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "566",
         "secondEvolution": "567",
         "thirdEvolution": null
     },
     {
         "id": 290,
+        "firstEvolutionLevel": 36,
+        "secondEvolutionLevel": null,
         "firstEvolution": "568",
         "secondEvolution": "569",
         "thirdEvolution": null
     },
     {
         "id": 291,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "570",
         "secondEvolution": "571",
         "thirdEvolution": null
     },
     {
         "id": 292,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "572",
         "secondEvolution": "573",
         "thirdEvolution": null
     },
     {
         "id": 293,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 41,
         "firstEvolution": "574",
         "secondEvolution": "575",
         "thirdEvolution": "576"
     },
     {
         "id": 294,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 41,
         "firstEvolution": "577",
         "secondEvolution": "578",
         "thirdEvolution": "579"
     },
     {
         "id": 295,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "580",
         "secondEvolution": "581",
         "thirdEvolution": null
     },
     {
         "id": 296,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": 47,
         "firstEvolution": "582",
         "secondEvolution": "583",
         "thirdEvolution": "584"
     },
     {
         "id": 297,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "585",
         "secondEvolution": "586",
         "thirdEvolution": null
     },
     {
         "id": 298,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "587",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 299,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "588",
         "secondEvolution": "589",
         "thirdEvolution": null
     },
     {
         "id": 300,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "590",
         "secondEvolution": "591",
         "thirdEvolution": null
     },
     {
         "id": 301,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "592",
         "secondEvolution": "593",
         "thirdEvolution": null
     },
     {
         "id": 302,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "594",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 303,
+        "firstEvolutionLevel": 36,
+        "secondEvolutionLevel": null,
         "firstEvolution": "595",
         "secondEvolution": "596",
         "thirdEvolution": null
     },
     {
         "id": 304,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": null,
         "firstEvolution": "597",
         "secondEvolution": "598",
         "thirdEvolution": null
     },
     {
         "id": 305,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": 49,
         "firstEvolution": "599",
         "secondEvolution": "600",
         "thirdEvolution": "601"
     },
     {
         "id": 306,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "602",
         "secondEvolution": "603",
         "thirdEvolution": "604"
     },
     {
         "id": 307,
+        "firstEvolutionLevel": 42,
+        "secondEvolutionLevel": null,
         "firstEvolution": "605",
         "secondEvolution": "606",
         "thirdEvolution": null
     },
     {
         "id": 308,
+        "firstEvolutionLevel": 41,
+        "secondEvolutionLevel": null,
         "firstEvolution": "607",
         "secondEvolution": "608",
         "thirdEvolution": "609"
     },
     {
         "id": 309,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": 48,
         "firstEvolution": "610",
         "secondEvolution": "611",
         "thirdEvolution": "612"
     },
     {
         "id": 310,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "613",
         "secondEvolution": "614",
         "thirdEvolution": null
     },
     {
         "id": 311,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "615",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 312,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "616",
         "secondEvolution": "617",
         "thirdEvolution": null
     },
     {
         "id": 313,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "618",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 314,
+        "firstEvolutionLevel": 50,
+        "secondEvolutionLevel": null,
         "firstEvolution": "619",
         "secondEvolution": "620",
         "thirdEvolution": null
     },
     {
         "id": 315,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "621",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 316,
+        "firstEvolutionLevel": 43,
+        "secondEvolutionLevel": null,
         "firstEvolution": "622",
         "secondEvolution": "623",
         "thirdEvolution": null
     },
     {
         "id": 317,
+        "firstEvolutionLevel": 52,
+        "secondEvolutionLevel": null,
         "firstEvolution": "624",
         "secondEvolution": "625",
         "thirdEvolution": null
     },
     {
         "id": 318,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "626",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 319,
+        "firstEvolutionLevel": 54,
+        "secondEvolutionLevel": null,
         "firstEvolution": "627",
         "secondEvolution": "628",
         "thirdEvolution": null
     },
     {
         "id": 320,
+        "firstEvolutionLevel": 54,
+        "secondEvolutionLevel": null,
         "firstEvolution": "629",
         "secondEvolution": "630",
         "thirdEvolution": null
     },
     {
         "id": 321,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "631",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 322,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "632",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 323,
+        "firstEvolutionLevel": 50,
+        "secondEvolutionLevel": 64,
         "firstEvolution": "633",
         "secondEvolution": "634",
         "thirdEvolution": "635"
     },
     {
         "id": 324,
+        "firstEvolutionLevel": 59,
+        "secondEvolutionLevel": null,
         "firstEvolution": "636",
         "secondEvolution": "637",
         "thirdEvolution": null
     },
     {
         "id": 325,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "638",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 326,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "639",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 327,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "640",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 328,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "641",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 329,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "642",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 330,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "643",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 331,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "644",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 332,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "645",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 333,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "646",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 334,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "647",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 335,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "648",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 336,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "649",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 337,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "650",
         "secondEvolution": "651",
         "thirdEvolution": "652"
     },
     {
         "id": 338,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "653",
         "secondEvolution": "654",
         "thirdEvolution": "655"
     },
     {
         "id": 339,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 36,
         "firstEvolution": "656",
         "secondEvolution": "657",
         "thirdEvolution": "658"
     },
     {
         "id": 340,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "659",
         "secondEvolution": "660",
         "thirdEvolution": null
     },
     {
         "id": 341,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 35,
         "firstEvolution": "661",
         "secondEvolution": "662",
         "thirdEvolution": "663"
     },
     {
         "id": 342,
+        "firstEvolutionLevel": 9,
+        "secondEvolutionLevel": 12,
         "firstEvolution": "664",
         "secondEvolution": "665",
         "thirdEvolution": "666"
     },
     {
         "id": 343,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "667",
         "secondEvolution": "668",
         "thirdEvolution": null
     },
     {
         "id": 344,
+        "firstEvolutionLevel": 19,
+        "secondEvolutionLevel": null,
         "firstEvolution": "669",
         "secondEvolution": "670",
         "thirdEvolution": "671"
     },
     {
         "id": 345,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": null,
         "firstEvolution": "672",
         "secondEvolution": "673",
         "thirdEvolution": null
     },
     {
         "id": 346,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": null,
         "firstEvolution": "674",
         "secondEvolution": "675",
         "thirdEvolution": null
     },
     {
         "id": 347,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "676",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 348,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "677",
         "secondEvolution": "678",
         "thirdEvolution": null
     },
     {
         "id": 349,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": null,
         "firstEvolution": "679",
         "secondEvolution": "680",
         "thirdEvolution": "681"
     },
     {
         "id": 350,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "682",
         "secondEvolution": "683",
         "thirdEvolution": null
     },
     {
         "id": 351,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "684",
         "secondEvolution": "685",
         "thirdEvolution": null
     },
     {
         "id": 352,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "686",
         "secondEvolution": "687",
         "thirdEvolution": null
     },
     {
         "id": 353,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "688",
         "secondEvolution": "689",
         "thirdEvolution": null
     },
     {
         "id": 354,
+        "firstEvolutionLevel": 48,
+        "secondEvolutionLevel": null,
         "firstEvolution": "690",
         "secondEvolution": "691",
         "thirdEvolution": null
     },
     {
         "id": 355,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "692",
         "secondEvolution": "693",
         "thirdEvolution": null
     },
     {
         "id": 356,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "694",
         "secondEvolution": "695",
         "thirdEvolution": null
     },
     {
         "id": 357,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "696",
         "secondEvolution": "697",
         "thirdEvolution": null
     },
     {
         "id": 358,
+        "firstEvolutionLevel": 39,
+        "secondEvolutionLevel": null,
         "firstEvolution": "698",
         "secondEvolution": "699",
         "thirdEvolution": null
     },
     {
         "id": 359,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "701",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 360,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "702",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 361,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "703",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 362,
+        "firstEvolutionLevel": 40,
+        "secondEvolutionLevel": 50,
         "firstEvolution": "704",
         "secondEvolution": "705",
         "thirdEvolution": "706"
     },
     {
         "id": 363,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "707",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 364,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "708",
         "secondEvolution": "709",
         "thirdEvolution": null
     },
     {
         "id": 365,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "710",
         "secondEvolution": "711",
         "thirdEvolution": null
     },
     {
         "id": 366,
+        "firstEvolutionLevel": 37,
+        "secondEvolutionLevel": null,
         "firstEvolution": "712",
         "secondEvolution": "713",
         "thirdEvolution": null
     },
     {
         "id": 367,
+        "firstEvolutionLevel": 48,
+        "secondEvolutionLevel": null,
         "firstEvolution": "714",
         "secondEvolution": "715",
         "thirdEvolution": null
     },
     {
         "id": 368,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "716",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 369,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "717",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 370,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "718",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 371,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "719",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 372,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "720",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 373,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "721",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 374,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 34,
         "firstEvolution": "722",
         "secondEvolution": "723",
         "thirdEvolution": "724"
     },
     {
         "id": 375,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 34,
         "firstEvolution": "725",
         "secondEvolution": "726",
         "thirdEvolution": "727"
     },
     {
         "id": 376,
+        "firstEvolutionLevel": 17,
+        "secondEvolutionLevel": 34,
         "firstEvolution": "728",
         "secondEvolution": "729",
         "thirdEvolution": "730"
     },
     {
         "id": 377,
+        "firstEvolutionLevel": 14,
+        "secondEvolutionLevel": 28,
         "firstEvolution": "731",
         "secondEvolution": "732",
         "thirdEvolution": "733"
     },
     {
         "id": 378,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "734",
         "secondEvolution": "735",
         "thirdEvolution": null
     },
     {
         "id": 379,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "736",
         "secondEvolution": "737",
         "thirdEvolution": "738"
     },
     {
         "id": 380,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "739",
         "secondEvolution": "740",
         "thirdEvolution": null
     },
     {
         "id": 381,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "741",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 382,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "742",
         "secondEvolution": "743",
         "thirdEvolution": null
     },
     {
         "id": 383,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "744",
         "secondEvolution": "745",
         "thirdEvolution": null
     },
     {
         "id": 384,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "746",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 385,
+        "firstEvolutionLevel": 38,
+        "secondEvolutionLevel": null,
         "firstEvolution": "747",
         "secondEvolution": "748",
         "thirdEvolution": null
     },
     {
         "id": 386,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "749",
         "secondEvolution": "750",
         "thirdEvolution": null
     },
     {
         "id": 387,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "751",
         "secondEvolution": "752",
         "thirdEvolution": null
     },
     {
         "id": 388,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "753",
         "secondEvolution": "754",
         "thirdEvolution": null
     },
     {
         "id": 389,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "755",
         "secondEvolution": "756",
         "thirdEvolution": null
     },
     {
         "id": 390,
+        "firstEvolutionLevel": 33,
+        "secondEvolutionLevel": null,
         "firstEvolution": "757",
         "secondEvolution": "758",
         "thirdEvolution": null
     },
     {
         "id": 391,
+        "firstEvolutionLevel": 27,
+        "secondEvolutionLevel": null,
         "firstEvolution": "759",
         "secondEvolution": "760",
         "thirdEvolution": null
     },
     {
         "id": 392,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": null,
         "firstEvolution": "761",
         "secondEvolution": "762",
         "thirdEvolution": "763"
     },
     {
         "id": 393,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "764",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 394,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "765",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 395,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "766",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 396,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "767",
         "secondEvolution": "768",
         "thirdEvolution": null
     },
     {
         "id": 397,
+        "firstEvolutionLevel": 42,
+        "secondEvolutionLevel": null,
         "firstEvolution": "769",
         "secondEvolution": "770",
         "thirdEvolution": null
     },
     {
         "id": 398,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "771",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 399,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "772",
         "secondEvolution": "773",
         "thirdEvolution": null
     },
     {
         "id": 400,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "774",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 401,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "775",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 402,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "776",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 403,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "777",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 404,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "778",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 405,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "779",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 406,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "780",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 407,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "781",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 408,
+        "firstEvolutionLevel": 35,
+        "secondEvolutionLevel": 45,
         "firstEvolution": "782",
         "secondEvolution": "783",
         "thirdEvolution": "784"
     },
     {
         "id": 409,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "785",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 410,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "786",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 411,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "787",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 412,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "788",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 413,
+        "firstEvolutionLevel": 43,
+        "secondEvolutionLevel": 53,
         "firstEvolution": "789",
         "secondEvolution": "790",
         "thirdEvolution": "791"
     },
     {
         "id": 414,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "793",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 415,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "794",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 416,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "795",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 417,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "796",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 418,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "797",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 419,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "798",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 420,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "799",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 421,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "800",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 422,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "801",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 423,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "802",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 424,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "803",
         "secondEvolution": "804",
         "thirdEvolution": null
     },
     {
         "id": 425,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "805",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 426,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "806",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 427,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "807",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 428,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "808",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 429,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "809",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 430,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 35,
         "firstEvolution": "810",
         "secondEvolution": "811",
         "thirdEvolution": "812"
     },
     {
         "id": 431,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 35,
         "firstEvolution": "813",
         "secondEvolution": "814",
         "thirdEvolution": "815"
     },
     {
         "id": 432,
+        "firstEvolutionLevel": 16,
+        "secondEvolutionLevel": 35,
         "firstEvolution": "816",
         "secondEvolution": "817",
         "thirdEvolution": "818"
     },
     {
         "id": 433,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "819",
         "secondEvolution": "820",
         "thirdEvolution": null
     },
     {
         "id": 434,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 38,
         "firstEvolution": "821",
         "secondEvolution": "822",
         "thirdEvolution": "823"
     },
     {
         "id": 435,
+        "firstEvolutionLevel": 10,
+        "secondEvolutionLevel": 30,
         "firstEvolution": "824",
         "secondEvolution": "825",
         "thirdEvolution": "826"
     },
     {
         "id": 436,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": null,
         "firstEvolution": "827",
         "secondEvolution": "828",
         "thirdEvolution": null
     },
     {
         "id": 437,
+        "firstEvolutionLevel": 20,
+        "secondEvolutionLevel": null,
         "firstEvolution": "829",
         "secondEvolution": "830",
         "thirdEvolution": null
     },
     {
         "id": 438,
+        "firstEvolutionLevel": 24,
+        "secondEvolutionLevel": null,
         "firstEvolution": "831",
         "secondEvolution": "832",
         "thirdEvolution": null
     },
     {
         "id": 439,
+        "firstEvolutionLevel": 22,
+        "secondEvolutionLevel": null,
         "firstEvolution": "833",
         "secondEvolution": "834",
         "thirdEvolution": null
     },
     {
         "id": 440,
+        "firstEvolutionLevel": 25,
+        "secondEvolutionLevel": null,
         "firstEvolution": "835",
         "secondEvolution": "836",
         "thirdEvolution": null
     },
     {
         "id": 441,
+        "firstEvolutionLevel": 18,
+        "secondEvolutionLevel": 34,
         "firstEvolution": "837",
         "secondEvolution": "838",
         "thirdEvolution": "839"
     },
     {
         "id": 442,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "840",
         "secondEvolution": "841",
         "thirdEvolution": null
     },
     {
         "id": 443,
+        "firstEvolutionLevel": 36,
+        "secondEvolutionLevel": null,
         "firstEvolution": "843",
         "secondEvolution": "844",
         "thirdEvolution": null
     },
     {
         "id": 444,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "845",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 445,
+        "firstEvolutionLevel": 26,
+        "secondEvolutionLevel": null,
         "firstEvolution": "846",
         "secondEvolution": "847",
         "thirdEvolution": null
     },
     {
         "id": 446,
+        "firstEvolutionLevel": 30,
+        "secondEvolutionLevel": null,
         "firstEvolution": "848",
         "secondEvolution": "849",
         "thirdEvolution": null
     },
     {
         "id": 447,
+        "firstEvolutionLevel": 28,
+        "secondEvolutionLevel": null,
         "firstEvolution": "850",
         "secondEvolution": "851",
         "thirdEvolution": null
     },
     {
         "id": 448,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "852",
         "secondEvolution": "853",
         "thirdEvolution": null
     },
     {
         "id": 449,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "854",
         "secondEvolution": "855",
         "thirdEvolution": null
     },
     {
         "id": 450,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 42,
         "firstEvolution": "856",
         "secondEvolution": "857",
         "thirdEvolution": "858"
     },
     {
         "id": 451,
+        "firstEvolutionLevel": 32,
+        "secondEvolutionLevel": 42,
         "firstEvolution": "859",
         "secondEvolution": "860",
         "thirdEvolution": "861"
     },
     {
         "id": 452,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "868",
         "secondEvolution": "869",
         "thirdEvolution": null
     },
     {
         "id": 453,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "870",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 454,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "871",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 455,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "872",
         "secondEvolution": "873",
         "thirdEvolution": null
     },
     {
         "id": 456,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "874",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 457,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "875",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 458,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "876",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 459,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "877",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 460,
+        "firstEvolutionLevel": 34,
+        "secondEvolutionLevel": null,
         "firstEvolution": "878",
         "secondEvolution": "879",
         "thirdEvolution": null
     },
     {
         "id": 461,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "880",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 462,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "881",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 463,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "882",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 464,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "883",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 465,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "884",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 466,
+        "firstEvolutionLevel": 50,
+        "secondEvolutionLevel": 60,
         "firstEvolution": "885",
         "secondEvolution": "886",
         "thirdEvolution": "887"
     },
     {
         "id": 467,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "888",
         "secondEvolution": null,
         "thirdEvolution": null
     },
     {
         "id": 468,
+        "firstEvolutionLevel": null,
+        "secondEvolutionLevel": null,
         "firstEvolution": "889",
         "secondEvolution": null,
         "thirdEvolution": null

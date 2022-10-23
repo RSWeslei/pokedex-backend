@@ -9,6 +9,14 @@ const EvolutionChain = sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
+        firstEvolutionLevel: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        secondEvolutionLevel: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
         firstEvolution: {
             type: DataTypes.INTEGER,
             allowNull: true
