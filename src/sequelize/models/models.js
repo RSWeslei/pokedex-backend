@@ -8,25 +8,32 @@ import PokemonType from "./PokemonType"
 import EvolutionChain from "./EvolutionChain"
 import populator from '../../populator'
 import TypeDamageRelation from "./TypeDamageRelation"
+import User from "./User"
 
 let sync = true
 async function start () {
-	await Ability.sync({force: sync})
-	await Type.sync({force: sync})
-	await Stat.sync({force: sync})
-	await Pokemon.sync({force: sync})
-	await PokemonAbility.sync({force: sync})
-	await PokemonType.sync({force: sync})
-	await EvolutionChain.sync({force: sync})
-	await TypeDamageRelation.sync({force: sync})
-
-	await getApi()
+	try {
+		await Ability.sync({force: sync})
+		await Type.sync({force: sync})
+		await Stat.sync({force: sync})
+		await Pokemon.sync({force: sync})
+		await PokemonAbility.sync({force: sync})
+		await PokemonType.sync({force: sync})
+		await EvolutionChain.sync({force: sync})
+		await TypeDamageRelation.sync({force: sync})
+		await User.sync({force: sync})
+	
+		await getApi()
+	} catch (error) {
+		console.log(error)
+	}
+		
 }
 async function getApi() {
 
 	// await populator.getAbilities()
 	// await populator.getEvolutionsChain()
-	// await populator.getTypes()0
+	// await populator.getTypes()
 	// await populator.getPokemons()
 	// await populator.getTypeDamageRelations()
 	await populator.main()

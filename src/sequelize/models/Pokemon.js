@@ -1,5 +1,6 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../../config/config";
+import EvolutionChain from "./EvolutionChain";
 import Stat from "./Stat";
 
 const Pokemon = sequelize.define(
@@ -33,7 +34,7 @@ const Pokemon = sequelize.define(
         generation: {
             type: DataTypes.INTEGER,
             allowNull: false
-        }
+        },
     },
     {
         freezeTableName: true,
@@ -42,6 +43,17 @@ const Pokemon = sequelize.define(
         updatedAt: false,
     },
 );
+
+Pokemon.belongsTo(EvolutionChain, {
+    as: 'evolution',
+    onDelete: 'NO ACTION',
+    onUpdate: 'NO ACTION',
+    foreignKey: {
+        name: 'idEvolutionChain',
+        allowNull: true,
+        field: 'id_evolution_chain'
+    },
+});
 
 Pokemon.belongsTo(Stat, {
     as: 'stat',

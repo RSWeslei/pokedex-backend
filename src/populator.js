@@ -225,13 +225,18 @@ const getEvolutionsChain = async () => {
             } catch (error) {
                 continue
             }
-            let actualExist = response.data.chain.evolves_to.length > 0
-            let nextExist = actualExist ? response.data.chain.evolves_to[0].evolves_to.length > 0 : false
+            let firstExist = response.data.chain.evolves_to.length > 0
+            let thirdExist = firstExist ? response.data.chain.evolves_to[0].evolves_to.length > 0 : false
+            let firstDetailsExist = firstExist ? response.data.chain.evolves_to[0].evolution_details.length > 0 : false
+            let thirdDetailsExist = thirdExist ? response.data.chain.evolves_to[0].evolves_to[0].evolution_details.length > 0 : false
+            
             let evolutionChain = {
                 id: response.data.id,
-                previousEvolution: response.data.chain.species.url.split('/')[6],
-                actualEvolution: actualExist ? response.data.chain.evolves_to[0].species.url.split('/')[6] : null,
-                nextEvolution: nextExist ? response.data.chain.evolves_to[0].evolves_to[0].species.url.split('/')[6] : null
+                firstEvolutionLevel: firstExist && firstDetailsExist ? response.data.chain.evolves_to[0].evolution_details[0].min_level : null,
+                secondEvolutionLevel: thirdExist && thirdDetailsExist ? response.data.chain.evolves_to[0].evolves_to[0].evolution_details[0].min_level : null,
+                firstEvolution: response.data.chain.species.url.split('/')[6],
+                secondEvolution: firstExist ? response.data.chain.evolves_to[0].species.url.split('/')[6] : null,
+                thirdEvolution: thirdExist ? response.data.chain.evolves_to[0].evolves_to[0].species.url.split('/')[6] : null
             }
             evolutions.push(evolutionChain)
             console.log(`Evolution ${i}/${evolutionSize}`)
@@ -271,6 +276,7 @@ const getPokemons = async () => {
             await getStat(response.data.stats, generation)
             let name = response.data.species.name
             let nameFixed = name.charAt(0).toUpperCase() + name.slice(1)
+            let idEvolutionChain = responseSpecies.data.evolution_chain ? responseSpecies.data.evolution_chain.url.split('/')[6] : null
 
             let texts = responseSpecies.data.flavor_text_entries
             let description = ''
@@ -310,7 +316,8 @@ const getPokemons = async () => {
                 images: images,
                 description: description,
                 idStat: stats.length,
-                generation: generation
+                generation: generation,
+                evolutionChain: idEvolutionChain
             }
             let abilitiesData = response.data.abilities.map(ability => {
                 return {

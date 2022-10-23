@@ -9,15 +9,23 @@ const EvolutionChain = sequelize.define(
             primaryKey: true,
             autoIncrement: true
         },
-        previousEvolution: {
+        firstEvolutionLevel: {
             type: DataTypes.INTEGER,
             allowNull: true
         },
-        actualEvolution: {
+        secondEvolutionLevel: {
             type: DataTypes.INTEGER,
-            allowNull: true   
+            allowNull: true
         },
-        nextEvolution: {
+        firstEvolution: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        secondEvolution: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        thirdEvolution: {
             type: DataTypes.INTEGER,
             allowNull: true
         }
