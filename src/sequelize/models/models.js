@@ -9,6 +9,7 @@ import EvolutionChain from "./EvolutionChain"
 import populator from '../../populator'
 import TypeDamageRelation from "./TypeDamageRelation"
 import User from "./User"
+import Favorite from "./Favorite"
 
 let sync = true
 async function start () {
@@ -22,6 +23,7 @@ async function start () {
 		await EvolutionChain.sync({force: sync})
 		await TypeDamageRelation.sync({force: sync})
 		await User.sync({force: sync})
+		await Favorite.sync({force: sync})
 	
 		await getApi()
 	} catch (error) {
