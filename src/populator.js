@@ -242,7 +242,6 @@ const getEvolutionsChain = async () => {
             console.log(`Evolution ${i}/${evolutionSize}`)
         }
         fs.writeFileSync('./src/json/evolutions_chain.json', JSON.stringify(evolutions))
-        console.log('Evolu��es da �rvore atualizadas com sucesso!')
         return evolutions
     } catch (error) {
         console.log(error);
