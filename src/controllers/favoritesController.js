@@ -45,7 +45,7 @@ const getByUser = async (req, res) => {
             i++
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Pokemons favoritos recuperados com sucesso',
             data: pokemonsJson
         })
@@ -94,7 +94,7 @@ const create = async (req, res) => {
             })
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Favorito criado com sucesso',
             data: response
         })
@@ -142,7 +142,7 @@ const remove = async (req, res) => {
             })
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Favorito deletado com sucesso',
             data: response
         })
@@ -190,7 +190,7 @@ const update = async (req, res) => {
             })
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Favorito atualizado com sucesso',
             data: response
         })

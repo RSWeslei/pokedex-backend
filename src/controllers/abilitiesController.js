@@ -14,7 +14,7 @@ const get = async (req, res) => {
                 })
             }
             return res.status(200).send({
-                type: 'sucess',
+                type: 'success',
                 message: 'Abilidades recuperadas com sucesso',
                 data: response
             })
@@ -32,7 +32,7 @@ const get = async (req, res) => {
             })
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Abilidade recuperada com sucesso',
             data: response
         })

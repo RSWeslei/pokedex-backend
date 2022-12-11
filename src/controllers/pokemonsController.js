@@ -28,7 +28,7 @@ const getAll = async (req, res) => {
             })
         }
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Pokemons recuperados com sucesso',
             data: pokemons
         })
@@ -78,7 +78,7 @@ const getById = async (req, res) => {
         pokemon.damageRelation = damageRelation
         pokemon.evolution = await getEvolutionChain(evolution)
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Pokemon recuperado com sucesso',
             data: pokemon
         })

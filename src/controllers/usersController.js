@@ -43,7 +43,7 @@ const signUp = async (req, res) => {
         })
 
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Usuario criado com sucesso',
             data: []
         })
@@ -109,7 +109,7 @@ const login = async (req, res) => {
         user.save()
 
         return res.status(200).send({
-            type: 'sucess',
+            type: 'success',
             message: 'Login realizado com sucesso',
             data: {
                 token: token
