@@ -1,10 +1,11 @@
 import Favorite from "../sequelize/models/Favorite";
 import User from "../sequelize/models/User";
+import tokenValidator from "../middlewares/tokenValidator";
 
 const getByUser = async (req, res) => {
     try {
-        const { idUser } = req.params;
-        let user = await User.findByPk(idUser)
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
+
         if (!user) {
             return res.status(404).send({
                 type: 'error',
@@ -12,6 +13,7 @@ const getByUser = async (req, res) => {
                 data: null
             })
         }
+
         let response = await user.getFavorites()
         if (!response) {
             return res.status(500).send({
@@ -58,10 +60,18 @@ const getByUser = async (req, res) => {
 
 const create = async (req, res) => {
     try {
-        const { idUser, idPokemon } = req.body;
+        const { idPokemon } = req.body;
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
+        if (!user) {
+            return res.status(404).send({
+                type: 'error',
+                message: 'Usuario nao encontrado',
+                data: null
+            })
+        }
         let favorite = await Favorite.findOne({
             where: {
-                idUser: idUser,
+                idUser: user.id,
                 idPokemon: idPokemon
             }
         })
@@ -72,16 +82,8 @@ const create = async (req, res) => {
                 data: null
             })
         }
-        let user = await User.findByPk(idUser)
-        if (!user) {
-            return res.status(404).send({
-                type: 'error',
-                message: 'Usuario nao encontrado',
-                data: null
-            })
-        }
         let response = await Favorite.create({
-            idUser: idUser,
+            idUser: user.id,
             idPokemon: idPokemon
         })
         if (!response) {
@@ -108,7 +110,22 @@ const create = async (req, res) => {
 const remove = async (req, res) => {
     try {
         let { idFavorite } = req.params;
-        let favorite = await Favorite.findByPk(idFavorite)
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
+        if (!user) {
+            return res.status(404).send({
+                type: 'error',
+                message: 'Usuario nao encontrado',
+                data: null
+            })
+        }
+           
+        let favorite = await Favorite.findOne({
+            where: {
+                id: idFavorite,
+                idUser: user.id
+            }
+        })
+
         if (!favorite) {
             return res.status(404).send({
                 type: 'error',
@@ -140,11 +157,19 @@ const remove = async (req, res) => {
 
 const update = async (req, res) => {
     try {
-        let { idFavorite, idUser, idPokemon } = req.body;
+        let { idFavorite, idPokemon } = req.body;
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
+        if (!user) {
+            return res.status(404).send({
+                type: 'error',
+                message: 'Usuario nao encontrado',
+                data: null
+            })
+        }
         let favorite = await Favorite.findOne({
             where: {
                 id: idFavorite,
-                idUser: idUser
+                idUser: user.id
             }
         })
         if (!favorite) {
