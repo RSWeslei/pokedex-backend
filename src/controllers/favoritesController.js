@@ -3,7 +3,7 @@ import User from "../sequelize/models/User";
 
 const getByUser = async (req, res) => {
     try {
-        const {idUser} = req.params;
+        const { idUser } = req.params;
         let user = await User.findByPk(idUser)
         if (!user) {
             return res.status(404).send({
@@ -20,10 +20,32 @@ const getByUser = async (req, res) => {
                 data: null
             })
         }
+        let pokemons = []
+        for (const favorite of response) {
+            let pokemon = await favorite.getPokemon({
+                attributes: ['id', 'name', 'images'],
+                order: [
+                    ['id', 'ASC']
+                ],
+            }
+            )
+            pokemons.push(pokemon)
+        }
+        let pokemonsJson = JSON.parse(JSON.stringify(pokemons))
+
+        let i = 0
+        for (const pokemon of pokemons) {
+            let types = await pokemon.getTypes({
+                attributes: ['id', 'name', 'color']
+            })
+            pokemonsJson[i].types = types
+            delete pokemonsJson[i].images.animated
+            i++
+        }
         return res.status(200).send({
             type: 'sucess',
             message: 'Pokemons favoritos recuperados com sucesso',
-            data: response
+            data: pokemonsJson
         })
     } catch (error) {
         return res.status(500).send({
@@ -36,7 +58,7 @@ const getByUser = async (req, res) => {
 
 const create = async (req, res) => {
     try {
-        const {idUser, idPokemon} = req.body;
+        const { idUser, idPokemon } = req.body;
         let favorite = await Favorite.findOne({
             where: {
                 idUser: idUser,
@@ -85,7 +107,7 @@ const create = async (req, res) => {
 
 const remove = async (req, res) => {
     try {
-        let {idFavorite} = req.params;
+        let { idFavorite } = req.params;
         let favorite = await Favorite.findByPk(idFavorite)
         if (!favorite) {
             return res.status(404).send({
@@ -118,7 +140,7 @@ const remove = async (req, res) => {
 
 const update = async (req, res) => {
     try {
-        let {idFavorite, idUser, idPokemon} = req.body;
+        let { idFavorite, idUser, idPokemon } = req.body;
         let favorite = await Favorite.findOne({
             where: {
                 id: idFavorite,
