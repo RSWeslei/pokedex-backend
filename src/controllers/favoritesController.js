@@ -1,5 +1,4 @@
 import Favorite from "../sequelize/models/Favorite";
-import User from "../sequelize/models/User";
 import tokenValidator from "../middlewares/tokenValidator";
 
 const getByUser = async (req, res) => {
@@ -31,6 +30,7 @@ const getByUser = async (req, res) => {
                 ],
             }
             )
+            
             pokemons.push(pokemon)
         }
         let pokemonsJson = JSON.parse(JSON.stringify(pokemons))
@@ -40,6 +40,7 @@ const getByUser = async (req, res) => {
             let types = await pokemon.getTypes({
                 attributes: ['id', 'name', 'color']
             })
+            pokemonsJson[i].isFavorite = true
             pokemonsJson[i].types = types
             delete pokemonsJson[i].images.animated
             i++

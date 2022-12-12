@@ -1,8 +1,12 @@
 import Pokemon from "../sequelize/models/Pokemon";
+import Favorite from "../sequelize/models/Favorite";
 import typeDamageRelationsController from "./typeDamageRelationsController";
+import tokenValidator from "../middlewares/tokenValidator";
 
 const getAll = async (req, res) => {
     try {
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
+        
         let response = await Pokemon.findAll({
             limit: 20,
             attributes: ['id', 'name', 'images'],
@@ -13,6 +17,19 @@ const getAll = async (req, res) => {
         let pokemons = JSON.parse(JSON.stringify(response))
         let i = 0
         for (let pokemon of response) {
+            if (user) {
+                let favorite = await Favorite.findOne({
+                    where: {
+                        idUser: user.id,
+                        idPokemon: pokemon.id
+                    }
+                })
+                if (favorite) {
+                    pokemons[i].isFavorite = true
+                } else {
+                    pokemons[i].isFavorite = false
+                }
+            }
             let types = await pokemon.getTypes({
                 attributes: ['id', 'name', 'color']
             })
@@ -44,6 +61,7 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
     try {
         const {id} = req.params;
+        const user = await tokenValidator.getUserByToken(req.headers.authorization)
         let response = await Pokemon.findOne({
             where: {
                 id: id
@@ -56,6 +74,19 @@ const getById = async (req, res) => {
         types.forEach(type => delete type.dataValues.pokemon_types)
         let abilities = await response.getAbilities()
         let abilitiesJson = JSON.parse(JSON.stringify(abilities))
+        if (user) {
+            let favorite = await Favorite.findOne({
+                where: {
+                    idUser: user.id,
+                    idPokemon: pokemon.id
+                }
+            })
+            if (favorite) {
+                pokemon.isFavorite = true
+            } else {
+                pokemon.isFavorite = false
+            }
+        }
         for (const ability of abilitiesJson) {
             let isHidden =  ability.pokemon_abilities.isHidden
             ability.pokemon_abilities = undefined
