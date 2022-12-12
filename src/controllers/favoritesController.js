@@ -110,7 +110,7 @@ const create = async (req, res) => {
 
 const remove = async (req, res) => {
     try {
-        let { idFavorite } = req.params;
+        let { idPokemon } = req.body;
         const user = await tokenValidator.getUserByToken(req.headers.authorization)
         if (!user) {
             return res.status(404).send({
@@ -122,7 +122,7 @@ const remove = async (req, res) => {
            
         let favorite = await Favorite.findOne({
             where: {
-                id: idFavorite,
+                idPokemon: idPokemon,
                 idUser: user.id
             }
         })
